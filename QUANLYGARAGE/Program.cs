@@ -16,7 +16,7 @@ namespace QUANLYGARAGE
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Flogin());
+            Application.Run(new fTabManager());
         }
     }
 }

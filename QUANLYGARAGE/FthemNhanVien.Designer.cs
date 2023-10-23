@@ -45,7 +45,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
@@ -212,13 +212,13 @@
             this.textBox5.Size = new System.Drawing.Size(248, 27);
             this.textBox5.TabIndex = 21;
             // 
-            // textBox6
+            // txtAddress
             // 
-            this.textBox6.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox6.Location = new System.Drawing.Point(184, 381);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(248, 27);
-            this.textBox6.TabIndex = 22;
+            this.txtAddress.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtAddress.Location = new System.Drawing.Point(184, 381);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(248, 27);
+            this.txtAddress.TabIndex = 22;
             // 
             // iconButton1
             // 
@@ -257,18 +257,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(959, 561);
-            this.Controls.Add(this.txtAddress);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.rdoNu);
-            this.Controls.Add(this.rdoNam);
-=======
             this.ClientSize = new System.Drawing.Size(851, 629);
             this.Controls.Add(this.iconButton2);
             this.Controls.Add(this.iconButton1);
-            this.Controls.Add(this.textBox6);
->>>>>>> 05ea88918718e110aa52f0db15e4f35160141bba
+            this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -315,7 +307,7 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtAddress;
         private FontAwesome.Sharp.IconButton iconButton1;
         private FontAwesome.Sharp.IconButton iconButton2;
     }
