@@ -48,11 +48,11 @@ namespace QUANLYGARAGE
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.lblCountKhachHang = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.lblCountSanPham = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -60,7 +60,7 @@ namespace QUANLYGARAGE
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblCountNhanVien = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
@@ -350,7 +350,7 @@ namespace QUANLYGARAGE
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Gold;
-            this.panel5.Controls.Add(this.lblCountKhachHang);
+            this.panel5.Controls.Add(this.label7);
             this.panel5.Controls.Add(this.label8);
             this.panel5.Controls.Add(this.pictureBox13);
             this.panel5.Location = new System.Drawing.Point(636, 53);
@@ -359,18 +359,18 @@ namespace QUANLYGARAGE
             this.panel5.Size = new System.Drawing.Size(191, 137);
             this.panel5.TabIndex = 3;
             // 
-            // lblCountKhachHang
+            // label7
             // 
-            this.lblCountKhachHang.AutoSize = true;
-            this.lblCountKhachHang.BackColor = System.Drawing.Color.Gold;
-            this.lblCountKhachHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblCountKhachHang.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.lblCountKhachHang.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblCountKhachHang.Location = new System.Drawing.Point(29, 86);
-            this.lblCountKhachHang.Name = "lblCountKhachHang";
-            this.lblCountKhachHang.Size = new System.Drawing.Size(21, 24);
-            this.lblCountKhachHang.TabIndex = 2;
-            this.lblCountKhachHang.Text = "0";
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Gold;
+            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label7.Location = new System.Drawing.Point(29, 86);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(21, 24);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "0";
             // 
             // label8
             // 
@@ -400,7 +400,7 @@ namespace QUANLYGARAGE
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel4.Controls.Add(this.lblCountSanPham);
+            this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.pictureBox12);
             this.panel4.Location = new System.Drawing.Point(636, 479);
@@ -409,18 +409,18 @@ namespace QUANLYGARAGE
             this.panel4.Size = new System.Drawing.Size(191, 137);
             this.panel4.TabIndex = 3;
             // 
-            // lblCountSanPham
+            // label5
             // 
-            this.lblCountSanPham.AutoSize = true;
-            this.lblCountSanPham.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblCountSanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblCountSanPham.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.lblCountSanPham.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblCountSanPham.Location = new System.Drawing.Point(29, 89);
-            this.lblCountSanPham.Name = "lblCountSanPham";
-            this.lblCountSanPham.Size = new System.Drawing.Size(21, 24);
-            this.lblCountSanPham.TabIndex = 2;
-            this.lblCountSanPham.Text = "0";
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(29, 89);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(21, 24);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "0";
             // 
             // label6
             // 
@@ -431,9 +431,9 @@ namespace QUANLYGARAGE
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label6.Location = new System.Drawing.Point(62, 89);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(105, 24);
+            this.label6.Size = new System.Drawing.Size(123, 24);
             this.label6.TabIndex = 1;
-            this.label6.Text = "Sản Phẩm";
+            this.label6.Text = "Khách hàng";
             // 
             // pictureBox12
             // 
@@ -481,9 +481,9 @@ namespace QUANLYGARAGE
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(62, 89);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 24);
+            this.label4.Size = new System.Drawing.Size(108, 24);
             this.label4.TabIndex = 1;
-            this.label4.Text = "Đơn hàng";
+            this.label4.Text = "Doanh thu";
             // 
             // pictureBox11
             // 
@@ -502,7 +502,7 @@ namespace QUANLYGARAGE
             // 
             this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.panel1.Controls.Add(this.lblCountNhanVien);
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox10);
             this.panel1.Location = new System.Drawing.Point(37, 53);
@@ -511,18 +511,18 @@ namespace QUANLYGARAGE
             this.panel1.Size = new System.Drawing.Size(191, 137);
             this.panel1.TabIndex = 0;
             // 
-            // lblCountNhanVien
+            // label2
             // 
-            this.lblCountNhanVien.AutoSize = true;
-            this.lblCountNhanVien.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.lblCountNhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblCountNhanVien.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.lblCountNhanVien.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblCountNhanVien.Location = new System.Drawing.Point(29, 86);
-            this.lblCountNhanVien.Name = "lblCountNhanVien";
-            this.lblCountNhanVien.Size = new System.Drawing.Size(21, 24);
-            this.lblCountNhanVien.TabIndex = 2;
-            this.lblCountNhanVien.Text = "0";
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(29, 86);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(21, 24);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "0";
             // 
             // label1
             // 
@@ -565,7 +565,6 @@ namespace QUANLYGARAGE
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý garga";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.fTabManager_FormClosed);
-            this.Load += new System.EventHandler(this.fTabManager_Load);
             this.panelMenu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -608,11 +607,11 @@ namespace QUANLYGARAGE
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label lblCountKhachHang;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label lblCountSanPham;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Panel panel3;
@@ -620,7 +619,7 @@ namespace QUANLYGARAGE
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lblCountNhanVien;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox10;
         private FontAwesome.Sharp.IconButton Buttlogout; 
