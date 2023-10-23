@@ -257,10 +257,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
+            this.ClientSize = new System.Drawing.Size(959, 561);
+            this.Controls.Add(this.txtAddress);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.rdoNu);
+            this.Controls.Add(this.rdoNam);
+=======
             this.ClientSize = new System.Drawing.Size(851, 629);
             this.Controls.Add(this.iconButton2);
             this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.textBox6);
+>>>>>>> 05ea88918718e110aa52f0db15e4f35160141bba
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
