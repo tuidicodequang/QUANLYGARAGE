@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,31 +19,19 @@ namespace QUANLYGARAGE
 
         private void buttLogin_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-LACK88J\SQLEXPRESS;Initial Catalog=QuanLyOTo;Integrated Security=True");
-            try
-            {
-                conn.Open();
-                string tk = txbUser.Text;
-                string mk = txbPassWord.Text;
-                string sql = "select * from NhanVien where  Username ='" + tk + "' and MatKhau ='" + mk + "'";
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                SqlDataReader dta = cmd.ExecuteReader();
-                if (dta.Read() == true)
-                {
-                    fTabManager f = new fTabManager();
-                    this.Hide();
-                    f.ShowDialog();
-                }
-
-                else
-                {
-                    MessageBox.Show("Tên đăng nhập hoặc mật khẩu chưa chính xác vui lòng nhập lại!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi kết nối");
-            }
+            //  string user = "admin1";
+            //  string password = "123456";
+            // if (user == txbUser.Text && password == txbPassWord.Text)
+            //  {
+            fTabManager f = new fTabManager();
+            this.Hide();
+            f.ShowDialog();
+            // this.Show();
+            //  }
+            //  else
+            //  {
+            //    MessageBox.Show("Tên đăng nhập hoặc mật khẩu chưa chính xác vui lòng nhập lại!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //  }
         }
 
         private void buttExit_Click(object sender, EventArgs e)
