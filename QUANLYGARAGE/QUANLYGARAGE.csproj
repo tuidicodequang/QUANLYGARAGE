@@ -71,6 +71,12 @@
     <Compile Include="FNhanVien.Designer.cs">
       <DependentUpon>FNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="FthemNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FthemNhanVien.Designer.cs">
+      <DependentUpon>FthemNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Flogin.resx">
@@ -78,6 +84,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Fmain.resx">
       <DependentUpon>Fmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FNhanVien.resx">
+      <DependentUpon>FNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FthemNhanVien.resx">
+      <DependentUpon>FthemNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
