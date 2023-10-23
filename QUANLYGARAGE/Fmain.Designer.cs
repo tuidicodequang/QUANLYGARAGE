@@ -93,7 +93,7 @@ namespace QUANLYGARAGE
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(226, 620);
+            this.panelMenu.Size = new System.Drawing.Size(226, 541);
             this.panelMenu.TabIndex = 0;
             // 
             // Buttlogout
@@ -108,7 +108,7 @@ namespace QUANLYGARAGE
             this.Buttlogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.Buttlogout.IconSize = 30;
             this.Buttlogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Buttlogout.Location = new System.Drawing.Point(0, 583);
+            this.Buttlogout.Location = new System.Drawing.Point(0, 504);
             this.Buttlogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Buttlogout.Name = "Buttlogout";
             this.Buttlogout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -132,11 +132,11 @@ namespace QUANLYGARAGE
             this.ButtDoanhThu.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ButtDoanhThu.IconSize = 30;
             this.ButtDoanhThu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtDoanhThu.Location = new System.Drawing.Point(0, 338);
+            this.ButtDoanhThu.Location = new System.Drawing.Point(0, 228);
             this.ButtDoanhThu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtDoanhThu.Name = "ButtDoanhThu";
             this.ButtDoanhThu.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.ButtDoanhThu.Size = new System.Drawing.Size(226, 78);
+            this.ButtDoanhThu.Size = new System.Drawing.Size(226, 37);
             this.ButtDoanhThu.TabIndex = 5;
             this.ButtDoanhThu.Tag = "Doanh thu";
             this.ButtDoanhThu.Text = "Doanh thu";
@@ -156,11 +156,11 @@ namespace QUANLYGARAGE
             this.ButtSanPham.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ButtSanPham.IconSize = 30;
             this.ButtSanPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtSanPham.Location = new System.Drawing.Point(0, 264);
+            this.ButtSanPham.Location = new System.Drawing.Point(0, 191);
             this.ButtSanPham.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtSanPham.Name = "ButtSanPham";
             this.ButtSanPham.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.ButtSanPham.Size = new System.Drawing.Size(226, 74);
+            this.ButtSanPham.Size = new System.Drawing.Size(226, 37);
             this.ButtSanPham.TabIndex = 4;
             this.ButtSanPham.Tag = "Sản phẩm";
             this.ButtSanPham.Text = "Sản phẩm";
@@ -180,11 +180,11 @@ namespace QUANLYGARAGE
             this.ButtKhachHang.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ButtKhachHang.IconSize = 30;
             this.ButtKhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtKhachHang.Location = new System.Drawing.Point(0, 196);
+            this.ButtKhachHang.Location = new System.Drawing.Point(0, 154);
             this.ButtKhachHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtKhachHang.Name = "ButtKhachHang";
             this.ButtKhachHang.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.ButtKhachHang.Size = new System.Drawing.Size(226, 68);
+            this.ButtKhachHang.Size = new System.Drawing.Size(226, 37);
             this.ButtKhachHang.TabIndex = 3;
             this.ButtKhachHang.Tag = "Khách hàng";
             this.ButtKhachHang.Text = "Khách hàng";
@@ -204,11 +204,11 @@ namespace QUANLYGARAGE
             this.ButtNhanVien.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ButtNhanVien.IconSize = 30;
             this.ButtNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtNhanVien.Location = new System.Drawing.Point(0, 134);
+            this.ButtNhanVien.Location = new System.Drawing.Point(0, 117);
             this.ButtNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtNhanVien.Name = "ButtNhanVien";
             this.ButtNhanVien.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.ButtNhanVien.Size = new System.Drawing.Size(226, 62);
+            this.ButtNhanVien.Size = new System.Drawing.Size(226, 37);
             this.ButtNhanVien.TabIndex = 2;
             this.ButtNhanVien.Tag = "Nhân viên";
             this.ButtNhanVien.Text = "Nhân viên";
@@ -232,7 +232,7 @@ namespace QUANLYGARAGE
             this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.iconButton2.Size = new System.Drawing.Size(226, 54);
+            this.iconButton2.Size = new System.Drawing.Size(226, 37);
             this.iconButton2.TabIndex = 1;
             this.iconButton2.Tag = "Trang chủ";
             this.iconButton2.Text = " Trang chủ";
@@ -287,7 +287,7 @@ namespace QUANLYGARAGE
             this.panelDesktop.Location = new System.Drawing.Point(226, 0);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(851, 620);
+            this.panelDesktop.Size = new System.Drawing.Size(836, 541);
             this.panelDesktop.TabIndex = 2;
             // 
             // panel6
@@ -547,16 +547,15 @@ namespace QUANLYGARAGE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1077, 620);
+            this.ClientSize = new System.Drawing.Size(1062, 541);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MaximumSize = new System.Drawing.Size(1095, 723);
             this.Name = "fTabManager";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý garga";
             this.panelMenu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -615,6 +614,6 @@ namespace QUANLYGARAGE
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private FontAwesome.Sharp.IconButton Buttlogout; 
+        private FontAwesome.Sharp.IconButton Buttlogout;
     }
 }
