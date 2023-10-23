@@ -28,27 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.BangNhanVien = new System.Windows.Forms.DataGridView();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnInsert = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.BangNhanVien)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // BangNhanVien
+            // dataGridView1
             // 
-            this.BangNhanVien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.BangNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.BangNhanVien.Location = new System.Drawing.Point(2, 180);
-            this.BangNhanVien.Name = "BangNhanVien";
-            this.BangNhanVien.RowHeadersWidth = 51;
-            this.BangNhanVien.RowTemplate.Height = 27;
-            this.BangNhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.BangNhanVien.Size = new System.Drawing.Size(860, 329);
-            this.BangNhanVien.TabIndex = 0;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(2, 180);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 27;
+            this.dataGridView1.Size = new System.Drawing.Size(860, 329);
+            this.dataGridView1.TabIndex = 0;
             // 
             // btnSearch
             // 
@@ -114,11 +112,10 @@
             this.Controls.Add(this.btnInsert);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.BangNhanVien);
+            this.Controls.Add(this.dataGridView1);
             this.Name = "FNhanVien";
             this.Text = "NhanVien";
-            this.Load += new System.EventHandler(this.FNhanVien_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.BangNhanVien)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,7 +123,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView BangNhanVien;
+        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnInsert;
