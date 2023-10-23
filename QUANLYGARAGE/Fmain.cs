@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -71,8 +72,8 @@ namespace QUANLYGARAGE
 
         private void ButtNhanVien_Click(object sender, EventArgs e)
         {
-            FNhanVien f = new FNhanVien();
-            OpenchildForm(f);
+            //  FNhanVien f = new FNhanVien();
+            //  OpenchildForm(f);
         }
 
         private void ButtKhachHang_Click(object sender, EventArgs e)
@@ -115,6 +116,30 @@ namespace QUANLYGARAGE
         {
             Flogin formLogin = (Flogin)Application.OpenForms["flogin"];
             formLogin.Close();
+        }
+
+        private void fTabManager_Load(object sender, EventArgs e)
+        {
+            string connectionString = @"Data Source=DESKTOP-LACK88J\SQLEXPRESS;Initial Catalog=QuanLyOTo;Integrated Security=True";
+            string countNhanVien = "SELECT COUNT(*) FROM NhanVien";
+            string countKhachHang = "SELECT COUNT(*) FROM KhachHang";
+            string countSanPham = "SELECT COUNT(*) FROM SanPham";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                SqlCommand command1 = new SqlCommand(countNhanVien, connection);
+                int NhanVien = (int)command1.ExecuteScalar();
+                SqlCommand command2 = new SqlCommand(countKhachHang, connection);
+                int KhachHang = (int)command2.ExecuteScalar();
+                SqlCommand command3 = new SqlCommand(countSanPham, connection);
+                int SanPham = (int)command3.ExecuteScalar();
+
+                lblCountNhanVien.Text = NhanVien.ToString();
+                lblCountKhachHang.Text = KhachHang.ToString();
+                lblCountSanPham.Text = SanPham.ToString();
+            }
         }
     }
 }

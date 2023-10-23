@@ -65,12 +65,6 @@
     <Compile Include="Fmain.Designer.cs">
       <DependentUpon>Fmain.cs</DependentUpon>
     </Compile>
-    <Compile Include="FNhanVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FNhanVien.Designer.cs">
-      <DependentUpon>FNhanVien.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Flogin.resx">
