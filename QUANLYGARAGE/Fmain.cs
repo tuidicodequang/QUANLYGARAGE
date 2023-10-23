@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QUANLYGARAGE
 {
-    public partial class Form1 : Form
+    public partial class fTabManager : Form
     {
-        public Form1()
+        public fTabManager()
         {
             InitializeComponent();
         }
