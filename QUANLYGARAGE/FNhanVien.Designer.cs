@@ -34,21 +34,34 @@
             this.btnInsert = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+<<<<<<< HEAD
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+=======
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+>>>>>>> 05ea88918718e110aa52f0db15e4f35160141bba
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+<<<<<<< HEAD
+            this.dataGridView1.Location = new System.Drawing.Point(2, 180);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 27;
+            this.dataGridView1.Size = new System.Drawing.Size(860, 329);
+=======
             this.dataGridView1.Location = new System.Drawing.Point(3, 153);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 27;
             this.dataGridView1.Size = new System.Drawing.Size(851, 310);
+>>>>>>> 05ea88918718e110aa52f0db15e4f35160141bba
             this.dataGridView1.TabIndex = 0;
             // 
             // btnSearch
@@ -129,16 +142,30 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
+            this.ClientSize = new System.Drawing.Size(864, 521);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnInsert);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.dataGridView1);
+=======
             this.ClientSize = new System.Drawing.Size(851, 629);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+>>>>>>> 05ea88918718e110aa52f0db15e4f35160141bba
             this.Name = "FNhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "NhanVien";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+<<<<<<< HEAD
+=======
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+>>>>>>> 05ea88918718e110aa52f0db15e4f35160141bba
             this.ResumeLayout(false);
 
         }
