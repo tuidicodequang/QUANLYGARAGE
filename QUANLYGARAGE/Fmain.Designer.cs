@@ -132,11 +132,11 @@ namespace QUANLYGARAGE
             this.ButtDoanhThu.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ButtDoanhThu.IconSize = 30;
             this.ButtDoanhThu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtDoanhThu.Location = new System.Drawing.Point(0, 245);
+            this.ButtDoanhThu.Location = new System.Drawing.Point(0, 281);
             this.ButtDoanhThu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtDoanhThu.Name = "ButtDoanhThu";
             this.ButtDoanhThu.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.ButtDoanhThu.Size = new System.Drawing.Size(226, 37);
+            this.ButtDoanhThu.Size = new System.Drawing.Size(226, 46);
             this.ButtDoanhThu.TabIndex = 5;
             this.ButtDoanhThu.Tag = "Doanh thu";
             this.ButtDoanhThu.Text = "Doanh thu";
@@ -156,11 +156,11 @@ namespace QUANLYGARAGE
             this.ButtSanPham.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ButtSanPham.IconSize = 30;
             this.ButtSanPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtSanPham.Location = new System.Drawing.Point(0, 208);
+            this.ButtSanPham.Location = new System.Drawing.Point(0, 235);
             this.ButtSanPham.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtSanPham.Name = "ButtSanPham";
             this.ButtSanPham.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.ButtSanPham.Size = new System.Drawing.Size(226, 37);
+            this.ButtSanPham.Size = new System.Drawing.Size(226, 46);
             this.ButtSanPham.TabIndex = 4;
             this.ButtSanPham.Tag = "Sản phẩm";
             this.ButtSanPham.Text = "Sản phẩm";
@@ -180,11 +180,11 @@ namespace QUANLYGARAGE
             this.ButtKhachHang.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ButtKhachHang.IconSize = 30;
             this.ButtKhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtKhachHang.Location = new System.Drawing.Point(0, 171);
+            this.ButtKhachHang.Location = new System.Drawing.Point(0, 189);
             this.ButtKhachHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtKhachHang.Name = "ButtKhachHang";
             this.ButtKhachHang.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.ButtKhachHang.Size = new System.Drawing.Size(226, 37);
+            this.ButtKhachHang.Size = new System.Drawing.Size(226, 46);
             this.ButtKhachHang.TabIndex = 3;
             this.ButtKhachHang.Tag = "Khách hàng";
             this.ButtKhachHang.Text = "Khách hàng";
@@ -204,11 +204,11 @@ namespace QUANLYGARAGE
             this.ButtNhanVien.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ButtNhanVien.IconSize = 30;
             this.ButtNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtNhanVien.Location = new System.Drawing.Point(0, 134);
+            this.ButtNhanVien.Location = new System.Drawing.Point(0, 143);
             this.ButtNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtNhanVien.Name = "ButtNhanVien";
             this.ButtNhanVien.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.ButtNhanVien.Size = new System.Drawing.Size(226, 37);
+            this.ButtNhanVien.Size = new System.Drawing.Size(226, 46);
             this.ButtNhanVien.TabIndex = 2;
             this.ButtNhanVien.Tag = "Nhân viên";
             this.ButtNhanVien.Text = "Nhân viên";
@@ -232,7 +232,7 @@ namespace QUANLYGARAGE
             this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.iconButton2.Size = new System.Drawing.Size(226, 37);
+            this.iconButton2.Size = new System.Drawing.Size(226, 46);
             this.iconButton2.TabIndex = 1;
             this.iconButton2.Tag = "Trang chủ";
             this.iconButton2.Text = " Trang chủ";
@@ -296,7 +296,7 @@ namespace QUANLYGARAGE
             this.panel6.Controls.Add(this.label9);
             this.panel6.Controls.Add(this.label10);
             this.panel6.Controls.Add(this.pictureBox14);
-            this.panel6.Location = new System.Drawing.Point(342, 208);
+            this.panel6.Location = new System.Drawing.Point(339, 267);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(191, 137);
@@ -309,7 +309,7 @@ namespace QUANLYGARAGE
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label9.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(29, 62);
+            this.label9.Location = new System.Drawing.Point(23, 91);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(21, 24);
             this.label9.TabIndex = 2;
@@ -322,7 +322,7 @@ namespace QUANLYGARAGE
             this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label10.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(62, 62);
+            this.label10.Location = new System.Drawing.Point(65, 91);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(108, 24);
             this.label10.TabIndex = 1;
@@ -335,7 +335,7 @@ namespace QUANLYGARAGE
             this.pictureBox14.Location = new System.Drawing.Point(3, 8);
             this.pictureBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(185, 43);
+            this.pictureBox14.Size = new System.Drawing.Size(191, 81);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox14.TabIndex = 0;
             this.pictureBox14.TabStop = false;
@@ -359,7 +359,7 @@ namespace QUANLYGARAGE
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(29, 62);
+            this.label7.Location = new System.Drawing.Point(29, 86);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(21, 24);
             this.label7.TabIndex = 2;
@@ -372,7 +372,7 @@ namespace QUANLYGARAGE
             this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(62, 62);
+            this.label8.Location = new System.Drawing.Point(62, 86);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(123, 24);
             this.label8.TabIndex = 1;
@@ -385,7 +385,7 @@ namespace QUANLYGARAGE
             this.pictureBox13.Location = new System.Drawing.Point(-3, 2);
             this.pictureBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(191, 67);
+            this.pictureBox13.Size = new System.Drawing.Size(191, 81);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox13.TabIndex = 0;
             this.pictureBox13.TabStop = false;
@@ -396,7 +396,7 @@ namespace QUANLYGARAGE
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.pictureBox12);
-            this.panel4.Location = new System.Drawing.Point(636, 371);
+            this.panel4.Location = new System.Drawing.Point(636, 479);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(191, 137);
@@ -409,7 +409,7 @@ namespace QUANLYGARAGE
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(29, 62);
+            this.label5.Location = new System.Drawing.Point(29, 89);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(21, 24);
             this.label5.TabIndex = 2;
@@ -422,7 +422,7 @@ namespace QUANLYGARAGE
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(56, 62);
+            this.label6.Location = new System.Drawing.Point(62, 89);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(123, 24);
             this.label6.TabIndex = 1;
@@ -435,7 +435,7 @@ namespace QUANLYGARAGE
             this.pictureBox12.Location = new System.Drawing.Point(0, 0);
             this.pictureBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(191, 52);
+            this.pictureBox12.Size = new System.Drawing.Size(191, 81);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox12.TabIndex = 0;
             this.pictureBox12.TabStop = false;
@@ -446,7 +446,7 @@ namespace QUANLYGARAGE
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.pictureBox11);
-            this.panel3.Location = new System.Drawing.Point(37, 371);
+            this.panel3.Location = new System.Drawing.Point(37, 479);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(191, 137);
@@ -459,7 +459,7 @@ namespace QUANLYGARAGE
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(29, 62);
+            this.label3.Location = new System.Drawing.Point(29, 89);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(21, 24);
             this.label3.TabIndex = 2;
@@ -472,7 +472,7 @@ namespace QUANLYGARAGE
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(62, 62);
+            this.label4.Location = new System.Drawing.Point(62, 89);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(108, 24);
             this.label4.TabIndex = 1;
@@ -486,7 +486,7 @@ namespace QUANLYGARAGE
             this.pictureBox11.Location = new System.Drawing.Point(0, 0);
             this.pictureBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(191, 52);
+            this.pictureBox11.Size = new System.Drawing.Size(191, 81);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 0;
             this.pictureBox11.TabStop = false;
@@ -511,7 +511,7 @@ namespace QUANLYGARAGE
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(29, 62);
+            this.label2.Location = new System.Drawing.Point(29, 86);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(21, 24);
             this.label2.TabIndex = 2;
@@ -524,7 +524,7 @@ namespace QUANLYGARAGE
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(62, 62);
+            this.label1.Location = new System.Drawing.Point(62, 86);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 24);
             this.label1.TabIndex = 1;
@@ -538,7 +538,7 @@ namespace QUANLYGARAGE
             this.pictureBox10.Location = new System.Drawing.Point(0, 0);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(191, 67);
+            this.pictureBox10.Size = new System.Drawing.Size(191, 81);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 0;
             this.pictureBox10.TabStop = false;
