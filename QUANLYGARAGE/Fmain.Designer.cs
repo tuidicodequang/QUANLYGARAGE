@@ -93,7 +93,7 @@ namespace QUANLYGARAGE
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(226, 676);
+            this.panelMenu.Size = new System.Drawing.Size(226, 620);
             this.panelMenu.TabIndex = 0;
             // 
             // Buttlogout
@@ -108,7 +108,7 @@ namespace QUANLYGARAGE
             this.Buttlogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.Buttlogout.IconSize = 30;
             this.Buttlogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Buttlogout.Location = new System.Drawing.Point(0, 639);
+            this.Buttlogout.Location = new System.Drawing.Point(0, 583);
             this.Buttlogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Buttlogout.Name = "Buttlogout";
             this.Buttlogout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -287,7 +287,7 @@ namespace QUANLYGARAGE
             this.panelDesktop.Location = new System.Drawing.Point(226, 0);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(851, 676);
+            this.panelDesktop.Size = new System.Drawing.Size(851, 620);
             this.panelDesktop.TabIndex = 2;
             // 
             // panel6
@@ -547,15 +547,16 @@ namespace QUANLYGARAGE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1077, 676);
+            this.ClientSize = new System.Drawing.Size(1077, 620);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximumSize = new System.Drawing.Size(1095, 723);
             this.Name = "fTabManager";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý garga";
             this.panelMenu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
