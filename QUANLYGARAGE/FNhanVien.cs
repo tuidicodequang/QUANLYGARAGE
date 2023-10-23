@@ -16,5 +16,12 @@ namespace QUANLYGARAGE
         {
             InitializeComponent();
         }
+
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+            FthemNhanVien f=new FthemNhanVien();
+            f.ShowDialog();
+            f.Dock = DockStyle.Fill;
+        }
     }
 }

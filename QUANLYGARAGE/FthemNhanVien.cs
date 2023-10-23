@@ -16,5 +16,15 @@ namespace QUANLYGARAGE
         {
             InitializeComponent();
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void FthemNhanVien_Load(object sender, EventArgs e)
+        {
+            this.Location = new Point(600, 200);
+        }
     }
 }
