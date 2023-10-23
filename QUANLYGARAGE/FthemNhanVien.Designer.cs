@@ -216,7 +216,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(959, 561);
+            this.ClientSize = new System.Drawing.Size(930, 561);
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.rdoNu);
