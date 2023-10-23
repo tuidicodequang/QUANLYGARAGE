@@ -67,7 +67,7 @@ namespace QUANLYGARAGE
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1220, 33);
+            this.panel1.Size = new System.Drawing.Size(1067, 33);
             this.panel1.TabIndex = 0;
             // 
             // button1
@@ -79,7 +79,7 @@ namespace QUANLYGARAGE
             this.button1.Font = new System.Drawing.Font("Showcard Gothic", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(1122, 0);
+            this.button1.Location = new System.Drawing.Point(966, -2);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(45, 33);
@@ -98,7 +98,7 @@ namespace QUANLYGARAGE
             this.buttExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttExit.Font = new System.Drawing.Font("Showcard Gothic", 9F);
             this.buttExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttExit.Location = new System.Drawing.Point(1173, -2);
+            this.buttExit.Location = new System.Drawing.Point(1017, 0);
             this.buttExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttExit.Name = "buttExit";
             this.buttExit.Size = new System.Drawing.Size(47, 33);
@@ -117,7 +117,7 @@ namespace QUANLYGARAGE
             this.panel2.Location = new System.Drawing.Point(0, 33);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(372, 474);
+            this.panel2.Size = new System.Drawing.Size(372, 465);
             this.panel2.TabIndex = 1;
             // 
             // pictureBox2
@@ -141,7 +141,7 @@ namespace QUANLYGARAGE
             this.panel3.Location = new System.Drawing.Point(372, 33);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(848, 474);
+            this.panel3.Size = new System.Drawing.Size(695, 465);
             this.panel3.TabIndex = 2;
             // 
             // label3
@@ -163,10 +163,10 @@ namespace QUANLYGARAGE
             this.buttLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttLogin.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.buttLogin.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.buttLogin.Location = new System.Drawing.Point(435, 320);
+            this.buttLogin.Location = new System.Drawing.Point(391, 293);
             this.buttLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttLogin.Name = "buttLogin";
-            this.buttLogin.Size = new System.Drawing.Size(258, 49);
+            this.buttLogin.Size = new System.Drawing.Size(222, 44);
             this.buttLogin.TabIndex = 3;
             this.buttLogin.Text = "Đăng nhập";
             this.buttLogin.UseVisualStyleBackColor = true;
@@ -179,16 +179,16 @@ namespace QUANLYGARAGE
             this.panel5.Controls.Add(this.pictureBox3);
             this.panel5.Controls.Add(this.label2);
             this.panel5.Controls.Add(this.txbPassWord);
-            this.panel5.Location = new System.Drawing.Point(101, 200);
+            this.panel5.Location = new System.Drawing.Point(86, 199);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(670, 57);
+            this.panel5.Size = new System.Drawing.Size(596, 71);
             this.panel5.TabIndex = 2;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::QUANLYGARAGE.Properties.Resources.password;
-            this.pictureBox3.Location = new System.Drawing.Point(52, 20);
+            this.pictureBox3.Location = new System.Drawing.Point(28, 24);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(34, 26);
@@ -201,7 +201,7 @@ namespace QUANLYGARAGE
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(101, 24);
+            this.label2.Location = new System.Drawing.Point(68, 22);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(115, 26);
             this.label2.TabIndex = 1;
@@ -212,10 +212,10 @@ namespace QUANLYGARAGE
             this.txbPassWord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.txbPassWord.Font = new System.Drawing.Font("Arial", 13F);
             this.txbPassWord.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txbPassWord.Location = new System.Drawing.Point(297, 18);
+            this.txbPassWord.Location = new System.Drawing.Point(262, 20);
             this.txbPassWord.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbPassWord.Name = "txbPassWord";
-            this.txbPassWord.Size = new System.Drawing.Size(331, 32);
+            this.txbPassWord.Size = new System.Drawing.Size(306, 32);
             this.txbPassWord.TabIndex = 0;
             this.txbPassWord.UseSystemPasswordChar = true;
             // 
@@ -224,16 +224,16 @@ namespace QUANLYGARAGE
             this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Controls.Add(this.label1);
             this.panel4.Controls.Add(this.txbUser);
-            this.panel4.Location = new System.Drawing.Point(101, 101);
+            this.panel4.Location = new System.Drawing.Point(79, 102);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(670, 57);
+            this.panel4.Size = new System.Drawing.Size(596, 71);
             this.panel4.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::QUANLYGARAGE.Properties.Resources.user;
-            this.pictureBox1.Location = new System.Drawing.Point(52, 22);
+            this.pictureBox1.Location = new System.Drawing.Point(35, 22);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(34, 26);
@@ -246,7 +246,7 @@ namespace QUANLYGARAGE
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(92, 25);
+            this.label1.Location = new System.Drawing.Point(75, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(173, 26);
             this.label1.TabIndex = 1;
@@ -257,10 +257,10 @@ namespace QUANLYGARAGE
             this.txbUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.txbUser.Font = new System.Drawing.Font("Arial", 13F);
             this.txbUser.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txbUser.Location = new System.Drawing.Point(297, 22);
+            this.txbUser.Location = new System.Drawing.Point(271, 22);
             this.txbUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbUser.Name = "txbUser";
-            this.txbUser.Size = new System.Drawing.Size(331, 32);
+            this.txbUser.Size = new System.Drawing.Size(306, 32);
             this.txbUser.TabIndex = 0;
             // 
             // Flogin
@@ -269,7 +269,7 @@ namespace QUANLYGARAGE
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.ClientSize = new System.Drawing.Size(1220, 507);
+            this.ClientSize = new System.Drawing.Size(1067, 498);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

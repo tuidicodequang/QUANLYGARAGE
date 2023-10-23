@@ -108,17 +108,18 @@ namespace QUANLYGARAGE
             this.Buttlogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.Buttlogout.IconSize = 30;
             this.Buttlogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Buttlogout.Location = new System.Drawing.Point(0, 639);
+            this.Buttlogout.Location = new System.Drawing.Point(0, 630);
             this.Buttlogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Buttlogout.Name = "Buttlogout";
             this.Buttlogout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.Buttlogout.Size = new System.Drawing.Size(226, 37);
+            this.Buttlogout.Size = new System.Drawing.Size(226, 46);
             this.Buttlogout.TabIndex = 8;
             this.Buttlogout.Tag = "Đăng xuất";
             this.Buttlogout.Text = "Đăng xuất";
             this.Buttlogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Buttlogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Buttlogout.UseVisualStyleBackColor = true;
+            this.Buttlogout.Click += new System.EventHandler(this.Buttlogout_Click);
             // 
             // ButtDoanhThu
             // 
@@ -143,6 +144,7 @@ namespace QUANLYGARAGE
             this.ButtDoanhThu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ButtDoanhThu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ButtDoanhThu.UseVisualStyleBackColor = true;
+            this.ButtDoanhThu.Click += new System.EventHandler(this.ButtDoanhThu_Click);
             // 
             // ButtSanPham
             // 
@@ -167,6 +169,7 @@ namespace QUANLYGARAGE
             this.ButtSanPham.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ButtSanPham.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ButtSanPham.UseVisualStyleBackColor = true;
+            this.ButtSanPham.Click += new System.EventHandler(this.ButtSanPham_Click);
             // 
             // ButtKhachHang
             // 
@@ -191,6 +194,7 @@ namespace QUANLYGARAGE
             this.ButtKhachHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ButtKhachHang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ButtKhachHang.UseVisualStyleBackColor = true;
+            this.ButtKhachHang.Click += new System.EventHandler(this.ButtKhachHang_Click);
             // 
             // ButtNhanVien
             // 
@@ -215,6 +219,7 @@ namespace QUANLYGARAGE
             this.ButtNhanVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ButtNhanVien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ButtNhanVien.UseVisualStyleBackColor = true;
+            this.ButtNhanVien.Click += new System.EventHandler(this.ButtNhanVien_Click);
             // 
             // iconButton2
             // 
@@ -239,6 +244,7 @@ namespace QUANLYGARAGE
             this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton2.UseVisualStyleBackColor = true;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
             // panel2
             // 
@@ -264,6 +270,7 @@ namespace QUANLYGARAGE
             this.iconButton1.Size = new System.Drawing.Size(62, 44);
             this.iconButton1.TabIndex = 2;
             this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // pictureBox1
             // 
@@ -557,6 +564,7 @@ namespace QUANLYGARAGE
             this.Name = "fTabManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý garga";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.fTabManager_FormClosed);
             this.panelMenu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -1,6 +1,6 @@
 ﻿namespace QUANLYGARAGE
 {
-    partial class NhanVien
+    partial class FNhanVien
     {
         /// <summary>
         /// Required designer variable.

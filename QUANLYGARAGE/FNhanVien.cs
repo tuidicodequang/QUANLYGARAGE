@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QUANLYGARAGE
 {
-    public partial class NhanVien : Form
+    public partial class FNhanVien : Form
     {
-        public NhanVien()
+        public FNhanVien()
         {
             InitializeComponent();
         }

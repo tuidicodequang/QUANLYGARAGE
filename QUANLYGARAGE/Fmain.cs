@@ -52,6 +52,69 @@ namespace QUANLYGARAGE
                 }
             }
         }
-        
+
+        private void Buttlogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Flogin formLogin = (Flogin)Application.OpenForms["flogin"];
+            this.Close();
+            formLogin.Show();
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            if (currentFormChild != null)
+            {
+                currentFormChild.Close();
+            }
+        }
+
+        private void ButtNhanVien_Click(object sender, EventArgs e)
+        {
+            FNhanVien f = new FNhanVien();
+            OpenchildForm(f);
+        }
+
+        private void ButtKhachHang_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButtSanPham_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButtDoanhThu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            CollapseMenu();
+        }
+        private Form currentFormChild;
+        private void OpenchildForm(Form childFrom)
+        {
+            if (currentFormChild != null)
+            {
+                currentFormChild.Close();
+            }
+            currentFormChild = childFrom;
+            childFrom.TopLevel = false;
+            childFrom.FormBorderStyle = FormBorderStyle.None;
+            childFrom.Dock = DockStyle.Fill;
+            panelDesktop.Controls.Add(childFrom);
+            panelDesktop.Tag = childFrom;
+            childFrom.BringToFront();
+            childFrom.Show();
+        }
+
+        private void fTabManager_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Flogin formLogin = (Flogin)Application.OpenForms["flogin"];
+            formLogin.Close();
+        }
     }
 }
