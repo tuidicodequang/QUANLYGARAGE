@@ -558,9 +558,10 @@ namespace QUANLYGARAGE
             this.ClientSize = new System.Drawing.Size(1077, 676);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelMenu);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
             this.Name = "fTabManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý garga";
@@ -623,6 +624,6 @@ namespace QUANLYGARAGE
         private System.Windows.Forms.Label lblCountNhanVien;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private FontAwesome.Sharp.IconButton Buttlogout; 
+        private FontAwesome.Sharp.IconButton Buttlogout;
     }
 }

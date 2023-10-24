@@ -53,12 +53,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(374, 9);
+            this.label1.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.Location = new System.Drawing.Point(371, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 23);
+            this.label1.Size = new System.Drawing.Size(272, 38);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Nhân Viên";
+            this.label1.Text = "Thêm Nhân Viên";
             // 
             // label2
             // 
@@ -84,7 +84,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(500, 82);
+            this.label4.Location = new System.Drawing.Point(592, 82);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(129, 23);
             this.label4.TabIndex = 3;
@@ -114,7 +114,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(500, 155);
+            this.label7.Location = new System.Drawing.Point(592, 159);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(84, 23);
             this.label7.TabIndex = 6;
@@ -155,7 +155,7 @@
             this.rdoNam.Location = new System.Drawing.Point(191, 238);
             this.rdoNam.Name = "rdoNam";
             this.rdoNam.Size = new System.Drawing.Size(68, 27);
-            this.rdoNam.TabIndex = 14;
+            this.rdoNam.TabIndex = 11;
             this.rdoNam.TabStop = true;
             this.rdoNam.Text = "Nam";
             this.rdoNam.UseVisualStyleBackColor = true;
@@ -186,22 +186,22 @@
             this.textBox2.Location = new System.Drawing.Point(191, 155);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(241, 27);
-            this.textBox2.TabIndex = 18;
+            this.textBox2.TabIndex = 10;
             // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox3.Location = new System.Drawing.Point(636, 82);
+            this.textBox3.Location = new System.Drawing.Point(791, 82);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(191, 27);
+            this.textBox3.Size = new System.Drawing.Size(241, 27);
             this.textBox3.TabIndex = 19;
             // 
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox4.Location = new System.Drawing.Point(636, 155);
+            this.textBox4.Location = new System.Drawing.Point(791, 155);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(191, 27);
+            this.textBox4.Size = new System.Drawing.Size(241, 27);
             this.textBox4.TabIndex = 20;
             // 
             // textBox5
@@ -210,7 +210,7 @@
             this.textBox5.Location = new System.Drawing.Point(184, 458);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(248, 27);
-            this.textBox5.TabIndex = 21;
+            this.textBox5.TabIndex = 18;
             // 
             // txtAddress
             // 
@@ -218,7 +218,7 @@
             this.txtAddress.Location = new System.Drawing.Point(184, 381);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(248, 27);
-            this.txtAddress.TabIndex = 22;
+            this.txtAddress.TabIndex = 17;
             // 
             // iconButton1
             // 
@@ -228,10 +228,10 @@
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 30;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(731, 238);
+            this.iconButton1.Location = new System.Drawing.Point(887, 267);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(86, 42);
-            this.iconButton1.TabIndex = 23;
+            this.iconButton1.Size = new System.Drawing.Size(145, 42);
+            this.iconButton1.TabIndex = 22;
             this.iconButton1.Text = "Hủy";
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.iconButton1.UseVisualStyleBackColor = true;
@@ -241,15 +241,15 @@
             // 
             this.iconButton2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Add;
-            this.iconButton2.IconColor = System.Drawing.Color.YellowGreen;
+            this.iconButton2.IconColor = System.Drawing.Color.DarkGreen;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Brands;
             this.iconButton2.IconSize = 30;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(608, 237);
+            this.iconButton2.Location = new System.Drawing.Point(673, 267);
             this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(86, 42);
-            this.iconButton2.TabIndex = 24;
-            this.iconButton2.Text = "Thêm";
+            this.iconButton2.Size = new System.Drawing.Size(145, 42);
+            this.iconButton2.TabIndex = 21;
+            this.iconButton2.Text = "Đồng ý";
             this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.iconButton2.UseVisualStyleBackColor = true;
             // 
@@ -257,7 +257,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(851, 629);
+            this.ClientSize = new System.Drawing.Size(1095, 531);
             this.Controls.Add(this.iconButton2);
             this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.txtAddress);
@@ -280,7 +280,6 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FthemNhanVien";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "FthemNhanVien";
             this.Load += new System.EventHandler(this.FthemNhanVien_Load);
             this.ResumeLayout(false);
@@ -311,4 +310,4 @@
         private FontAwesome.Sharp.IconButton iconButton1;
         private FontAwesome.Sharp.IconButton iconButton2;
     }
-}
+};

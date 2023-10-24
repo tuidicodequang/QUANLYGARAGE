@@ -8,23 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QUANLYGARAGE
+namespace Project
 {
-    public partial class FthemNhanVien : Form
+    public partial class FThemXe : Form
     {
-        public FthemNhanVien()
+       
+        public FThemXe()
         {
             InitializeComponent();
         }
-
-        private void iconButton1_Click(object sender, EventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void FthemNhanVien_Load(object sender, EventArgs e)
-        {
-        }
-      
+       
     }
 }

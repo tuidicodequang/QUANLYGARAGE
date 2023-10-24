@@ -71,6 +71,18 @@
     <Compile Include="FNhanVien.Designer.cs">
       <DependentUpon>FNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="FThemXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FThemXe.designer.cs">
+      <DependentUpon>FThemXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSanPham.designer.cs">
+      <DependentUpon>FSanPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="FthemNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +99,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FNhanVien.resx">
       <DependentUpon>FNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FThemXe.resx">
+      <DependentUpon>FThemXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSanPham.resx">
+      <DependentUpon>FSanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FthemNhanVien.resx">
       <DependentUpon>FthemNhanVien.cs</DependentUpon>
@@ -144,6 +162,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\nhân viên1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-photo-3221165.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dau-tich-mau-xanh.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

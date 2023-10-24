@@ -8,19 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QUANLYGARAGE
+namespace Project
 {
-    public partial class FNhanVien : Form
+    public partial class FCarList : Form
     {
-        public FNhanVien()
+        public FCarList()
         {
             InitializeComponent();
+           
         }
-        private void btnInsert_Click(object sender, EventArgs e)
+
+        private void btnAdd_Click(object sender, EventArgs e)
         {
-            FthemNhanVien f=new FthemNhanVien();
+            FThemXe f= new FThemXe();
             OpenchildForm(f);
-            
         }
         private Form currentFormChild;
         private void OpenchildForm(Form childFrom)

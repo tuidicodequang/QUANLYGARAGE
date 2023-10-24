@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -83,7 +84,8 @@ namespace QUANLYGARAGE
 
         private void ButtSanPham_Click(object sender, EventArgs e)
         {
-
+            FCarList f = new FCarList();
+            OpenchildForm(f);
         }
 
         private void ButtDoanhThu_Click(object sender, EventArgs e)

@@ -83,6 +83,16 @@ namespace QUANLYGARAGE.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dau_tich_mau_xanh {
+            get {
+                object obj = ResourceManager.GetObject("dau-tich-mau-xanh", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap doanh_thu {
             get {
                 object obj = ResourceManager.GetObject("doanh thu", resourceCulture);
@@ -137,6 +147,16 @@ namespace QUANLYGARAGE.Properties {
         internal static System.Drawing.Bitmap password {
             get {
                 object obj = ResourceManager.GetObject("password", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pexels_photo_3221165 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-photo-3221165", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
