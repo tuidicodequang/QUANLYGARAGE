@@ -205,5 +205,20 @@
   <ItemGroup>
     <None Include="Resources\dau-tich-mau-xanh.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpapersden.com_need-for-speed-neon-ai-art_1920x1080.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpapersden.com_grid-2019-game_1920x1080.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpapersden.com_lamborghini-aventador-svj-roadster-xago_1920x1080.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpapersden.com_lamborghini_1920x1080.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpapersden.com_lamborghini-aventador-svj-roadster-xago_1920x10801.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

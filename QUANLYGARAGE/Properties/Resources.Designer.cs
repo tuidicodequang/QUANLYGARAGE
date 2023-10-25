@@ -180,5 +180,55 @@ namespace QUANLYGARAGE.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wallpapersden_com_grid_2019_game_1920x1080 {
+            get {
+                object obj = ResourceManager.GetObject("wallpapersden.com_grid-2019-game_1920x1080", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wallpapersden_com_lamborghini_1920x1080 {
+            get {
+                object obj = ResourceManager.GetObject("wallpapersden.com_lamborghini_1920x1080", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wallpapersden_com_lamborghini_aventador_svj_roadster_xago_1920x1080 {
+            get {
+                object obj = ResourceManager.GetObject("wallpapersden.com_lamborghini-aventador-svj-roadster-xago_1920x1080", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wallpapersden_com_need_for_speed_neon_ai_art_1920x1080 {
+            get {
+                object obj = ResourceManager.GetObject("wallpapersden.com_need-for-speed-neon-ai-art_1920x1080", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wallpapersden1 {
+            get {
+                object obj = ResourceManager.GetObject("wallpapersden1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

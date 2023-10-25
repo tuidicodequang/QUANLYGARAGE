@@ -199,7 +199,7 @@
             this.btnCancel.Text = "Hủy";
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            
             // 
             // btnRemove
             // 
@@ -213,7 +213,7 @@
             this.btnRemove.Text = "Xóa";
             this.btnRemove.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRemove.UseVisualStyleBackColor = true;
-            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
+           
             // 
             // btnCar
             // 
@@ -227,7 +227,7 @@
             this.btnCar.Text = "Xe";
             this.btnCar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCar.UseVisualStyleBackColor = true;
-            this.btnCar.Click += new System.EventHandler(this.btnCar_Click);
+         
             // 
             // btnAccept
             // 
@@ -241,7 +241,7 @@
             this.btnAccept.Text = "Đồng ý";
             this.btnAccept.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAccept.UseVisualStyleBackColor = true;
-            this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
+     
             // 
             // label9
             // 
@@ -298,7 +298,7 @@
             this.Name = "frmCreateOrder";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCreateOrder";
-            this.Load += new System.EventHandler(this.frmCreateOrder_Load);
+           
             ((System.ComponentModel.ISupportInitialize)(this.dgvListOrder)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
