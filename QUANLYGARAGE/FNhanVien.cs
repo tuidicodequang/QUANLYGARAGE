@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -37,6 +38,42 @@ namespace QUANLYGARAGE
             panel1.Tag = childFrom;
             childFrom.BringToFront();
             childFrom.Show();
+        }
+
+        private void FNhanVien_Load(object sender, EventArgs e)
+        {
+            string connectionString = @"Data Source=DESKTOP-LACK88J\SQLEXPRESS;Initial Catalog=QuanlyOto;Integrated Security=True"; // Thay thế bằng chuỗi kết nối của bạn
+
+            string query = "SELECT * FROM NhanVien"; // Truy vấn để lấy dữ liệu nhân viên
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                DataTable dataTable = new DataTable();
+
+                adapter.Fill(dataTable);
+
+                dgvNV.DataSource = dataTable; // Gán dữ liệu vào DataGridView
+            }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string connectionString = @"Data Source=DESKTOP-LACK88J\SQLEXPRESS;Initial Catalog=QuanlyOto;Integrated Security=True"; // Thay thế bằng chuỗi kết nối của bạn
+
+            string query = "SELECT * FROM NhanVien "; // Truy vấn để lấy dữ liệu nhân viên
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                DataTable dataTable = new DataTable();
+
+                adapter.Fill(dataTable);
+
+                dgvNV.DataSource = dataTable; // Gán dữ liệu vào DataGridView
+            }
         }
     }
 }

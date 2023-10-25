@@ -32,10 +32,11 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnInsert = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textTimNV = new System.Windows.Forms.TextBox();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dgvCustomer = new System.Windows.Forms.DataGridView();
+            this.dgvNV = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
             this.CustomerId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sex = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,10 +45,9 @@
             this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.password = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNV)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSearch
@@ -59,6 +59,7 @@
             this.btnSearch.TabIndex = 1;
             this.btnSearch.Text = "Tìm kiếm";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnUpdate
             // 
@@ -91,13 +92,13 @@
             this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // textTimNV
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox1.Location = new System.Drawing.Point(113, 104);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(340, 27);
-            this.textBox1.TabIndex = 5;
+            this.textTimNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textTimNV.Location = new System.Drawing.Point(113, 104);
+            this.textTimNV.Name = "textTimNV";
+            this.textTimNV.Size = new System.Drawing.Size(340, 27);
+            this.textTimNV.TabIndex = 5;
             // 
             // iconPictureBox1
             // 
@@ -116,11 +117,11 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.dgvCustomer);
+            this.panel1.Controls.Add(this.dgvNV);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnUpdate);
             this.panel1.Controls.Add(this.btnDelete);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.textTimNV);
             this.panel1.Controls.Add(this.btnInsert);
             this.panel1.Controls.Add(this.iconPictureBox1);
             this.panel1.Controls.Add(this.btnSearch);
@@ -130,14 +131,14 @@
             this.panel1.Size = new System.Drawing.Size(1339, 807);
             this.panel1.TabIndex = 7;
             // 
-            // dgvCustomer
+            // dgvNV
             // 
-            this.dgvCustomer.AllowUserToAddRows = false;
-            this.dgvCustomer.AllowUserToDeleteRows = false;
-            this.dgvCustomer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvCustomer.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvNV.AllowUserToAddRows = false;
+            this.dgvNV.AllowUserToDeleteRows = false;
+            this.dgvNV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvNV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvNV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CustomerId,
             this.LastName,
             this.Sex,
@@ -146,15 +147,26 @@
             this.Phone,
             this.Column1,
             this.password});
-            this.dgvCustomer.Location = new System.Drawing.Point(13, 228);
-            this.dgvCustomer.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvCustomer.MultiSelect = false;
-            this.dgvCustomer.Name = "dgvCustomer";
-            this.dgvCustomer.ReadOnly = true;
-            this.dgvCustomer.RowHeadersWidth = 51;
-            this.dgvCustomer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCustomer.Size = new System.Drawing.Size(1326, 579);
-            this.dgvCustomer.TabIndex = 19;
+            this.dgvNV.Location = new System.Drawing.Point(13, 228);
+            this.dgvNV.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvNV.MultiSelect = false;
+            this.dgvNV.Name = "dgvNV";
+            this.dgvNV.ReadOnly = true;
+            this.dgvNV.RowHeadersWidth = 51;
+            this.dgvNV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvNV.Size = new System.Drawing.Size(1326, 579);
+            this.dgvNV.TabIndex = 19;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.Location = new System.Drawing.Point(606, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(173, 38);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Nhân viên";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // CustomerId
             // 
@@ -163,6 +175,7 @@
             this.CustomerId.MinimumWidth = 6;
             this.CustomerId.Name = "CustomerId";
             this.CustomerId.ReadOnly = true;
+            this.CustomerId.Visible = false;
             // 
             // LastName
             // 
@@ -171,6 +184,7 @@
             this.LastName.MinimumWidth = 6;
             this.LastName.Name = "LastName";
             this.LastName.ReadOnly = true;
+            this.LastName.Visible = false;
             // 
             // Sex
             // 
@@ -188,6 +202,7 @@
             this.DateOfBirth.MinimumWidth = 6;
             this.DateOfBirth.Name = "DateOfBirth";
             this.DateOfBirth.ReadOnly = true;
+            this.DateOfBirth.Visible = false;
             // 
             // Address
             // 
@@ -196,6 +211,7 @@
             this.Address.MinimumWidth = 6;
             this.Address.Name = "Address";
             this.Address.ReadOnly = true;
+            this.Address.Visible = false;
             // 
             // Phone
             // 
@@ -204,6 +220,7 @@
             this.Phone.MinimumWidth = 6;
             this.Phone.Name = "Phone";
             this.Phone.ReadOnly = true;
+            this.Phone.Visible = false;
             // 
             // Column1
             // 
@@ -211,6 +228,7 @@
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
+            this.Column1.Visible = false;
             // 
             // password
             // 
@@ -218,17 +236,7 @@
             this.password.MinimumWidth = 6;
             this.password.Name = "password";
             this.password.ReadOnly = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(606, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(173, 38);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Nhân viên";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.password.Visible = false;
             // 
             // FNhanVien
             // 
@@ -240,10 +248,11 @@
             this.Name = "FNhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "NhanVien";
+            this.Load += new System.EventHandler(this.FNhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNV)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -253,11 +262,11 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnInsert;
         private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textTimNV;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dgvCustomer;
+        private System.Windows.Forms.DataGridView dgvNV;
         private System.Windows.Forms.DataGridViewTextBoxColumn CustomerId;
         private System.Windows.Forms.DataGridViewTextBoxColumn LastName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Sex;
