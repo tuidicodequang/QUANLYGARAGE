@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QUANLYGARAGE;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,18 +11,12 @@ using System.Windows.Forms;
 
 namespace Project
 {
-    public partial class FCarList : Form
+    public partial class FKhachHang : Form
     {
-        public FCarList()
+
+        public FKhachHang()
         {
             InitializeComponent();
-           
-        }
-
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            FThemXe f= new FThemXe();
-            OpenchildForm(f);
         }
         private Form currentFormChild;
         private void OpenchildForm(Form childFrom)
@@ -39,10 +34,10 @@ namespace Project
             childFrom.BringToFront();
             childFrom.Show();
         }
-
-        private void dgvListCar_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btnInsert_Click(object sender, EventArgs e)
         {
-
+            FThemKhachHang f= new FThemKhachHang();
+            OpenchildForm(f);
         }
     }
 }

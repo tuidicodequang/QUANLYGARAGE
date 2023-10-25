@@ -71,6 +71,18 @@
     <Compile Include="FNhanVien.Designer.cs">
       <DependentUpon>FNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCreateOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateOrder.designer.cs">
+      <DependentUpon>frmCreateOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FThemKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FThemKhachHang.Designer.cs">
+      <DependentUpon>FThemKhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="FThemXe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +101,18 @@
     <Compile Include="FthemNhanVien.Designer.cs">
       <DependentUpon>FthemNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="FKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FKhachHang.designer.cs">
+      <DependentUpon>FKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FdoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FdoanhThu.designer.cs">
+      <DependentUpon>FdoanhThu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Flogin.resx">
@@ -100,6 +124,12 @@
     <EmbeddedResource Include="FNhanVien.resx">
       <DependentUpon>FNhanVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateOrder.resx">
+      <DependentUpon>frmCreateOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FThemKhachHang.resx">
+      <DependentUpon>FThemKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FThemXe.resx">
       <DependentUpon>FThemXe.cs</DependentUpon>
     </EmbeddedResource>
@@ -108,6 +138,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FthemNhanVien.resx">
       <DependentUpon>FthemNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FKhachHang.resx">
+      <DependentUpon>FKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FdoanhThu.resx">
+      <DependentUpon>FdoanhThu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

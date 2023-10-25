@@ -79,7 +79,8 @@ namespace QUANLYGARAGE
 
         private void ButtKhachHang_Click(object sender, EventArgs e)
         {
-
+            FKhachHang f= new FKhachHang(); 
+            OpenchildForm(f);
         }
 
         private void ButtSanPham_Click(object sender, EventArgs e)
@@ -90,7 +91,8 @@ namespace QUANLYGARAGE
 
         private void ButtDoanhThu_Click(object sender, EventArgs e)
         {
-
+            FdoanhThu f= new FdoanhThu();
+            OpenchildForm(f);
         }
 
         private void iconButton1_Click(object sender, EventArgs e)
@@ -142,6 +144,11 @@ namespace QUANLYGARAGE
                 lblCountKhachHang.Text = KhachHang.ToString();
                 lblCountSanPham.Text = SanPham.ToString();
             }
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
