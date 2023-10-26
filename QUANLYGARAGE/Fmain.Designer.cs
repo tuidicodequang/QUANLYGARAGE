@@ -310,9 +310,9 @@ namespace QUANLYGARAGE
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(62, 89);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 24);
+            this.label4.Size = new System.Drawing.Size(104, 24);
             this.label4.TabIndex = 1;
-            this.label4.Text = "Doanh thu";
+            this.label4.Text = "Sản phẩm";
             // 
             // pictureBox11
             // 
@@ -571,7 +571,7 @@ namespace QUANLYGARAGE
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::QUANLYGARAGE.Properties.Resources.Picture1;
+            this.pictureBox1.Image = global::QUANLYGARAGE.Properties.Resources.gtavi;
             this.pictureBox1.Location = new System.Drawing.Point(0, 2);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";

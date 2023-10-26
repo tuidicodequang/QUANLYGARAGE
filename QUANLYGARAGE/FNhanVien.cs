@@ -60,13 +60,15 @@ namespace QUANLYGARAGE
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
+           
             string connectionString = @"Data Source=DESKTOP-LACK88J\SQLEXPRESS;Initial Catalog=QuanlyOto;Integrated Security=True"; // Thay thế bằng chuỗi kết nối của bạn
-            string tenNhanVien=textTimNV.Text;
-            string query = "SELECT * FROM NhanVien where NhanVien= '"+tenNhanVien+"'"; // Truy vấn để lấy dữ liệu nhân viên
+            string tenNhanVien = textTimNV.Text;
+            string query = "SELECT * FROM NhanVien WHERE HoTen = @TenNhanVien"; // Truy vấn để lấy dữ liệu nhân viên
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@TenNhanVien", tenNhanVien);
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
                 DataTable dataTable = new DataTable();
 
@@ -75,5 +77,6 @@ namespace QUANLYGARAGE
                 dgvNV.DataSource = dataTable; // Gán dữ liệu vào DataGridView
             }
         }
+        }
     }
-}
+

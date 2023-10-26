@@ -103,6 +103,16 @@ namespace QUANLYGARAGE.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gtavi {
+            get {
+                object obj = ResourceManager.GetObject("gtavi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kisspng_client_icon_businessman_icon_vector_design_5a6f77c8923c97_818921111517254600599 {
             get {
                 object obj = ResourceManager.GetObject("kisspng-client-icon-businessman-icon-vector-design-5a6f77c8923c97.818921111517254" +

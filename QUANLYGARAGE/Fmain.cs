@@ -68,6 +68,7 @@ namespace QUANLYGARAGE
             if (currentFormChild != null)
             {
                 currentFormChild.Close();
+                fTabManager_Load(sender as Form, e);
             }
         }
 
@@ -116,7 +117,7 @@ namespace QUANLYGARAGE
             childFrom.Show();
         }
 
-        private void fTabManager_FormClosed(object sender, FormClosedEventArgs e)
+        public void fTabManager_FormClosed(object sender, FormClosedEventArgs e)
         {
             Flogin formLogin = (Flogin)Application.OpenForms["flogin"];
             formLogin.Close();

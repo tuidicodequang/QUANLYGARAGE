@@ -37,15 +37,15 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.rdoNam = new System.Windows.Forms.RadioButton();
-            this.rdoNu = new System.Windows.Forms.RadioButton();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.textMANV = new System.Windows.Forms.TextBox();
+            this.TickNam = new System.Windows.Forms.RadioButton();
+            this.TichNu = new System.Windows.Forms.RadioButton();
+            this.textNgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.textHoTen = new System.Windows.Forms.TextBox();
+            this.textUser = new System.Windows.Forms.TextBox();
+            this.textPassword = new System.Windows.Forms.TextBox();
+            this.textSDT = new System.Windows.Forms.TextBox();
+            this.txtDiaChiNV = new System.Windows.Forms.TextBox();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
@@ -140,85 +140,85 @@
             this.label9.TabIndex = 8;
             this.label9.Text = "Địa Chỉ";
             // 
-            // textBox1
+            // textMANV
             // 
-            this.textBox1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox1.Location = new System.Drawing.Point(191, 82);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(241, 27);
-            this.textBox1.TabIndex = 9;
+            this.textMANV.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textMANV.Location = new System.Drawing.Point(191, 82);
+            this.textMANV.Name = "textMANV";
+            this.textMANV.Size = new System.Drawing.Size(241, 27);
+            this.textMANV.TabIndex = 9;
             // 
-            // rdoNam
+            // TickNam
             // 
-            this.rdoNam.AutoSize = true;
-            this.rdoNam.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoNam.Location = new System.Drawing.Point(191, 238);
-            this.rdoNam.Name = "rdoNam";
-            this.rdoNam.Size = new System.Drawing.Size(68, 27);
-            this.rdoNam.TabIndex = 11;
-            this.rdoNam.TabStop = true;
-            this.rdoNam.Text = "Nam";
-            this.rdoNam.UseVisualStyleBackColor = true;
+            this.TickNam.AutoSize = true;
+            this.TickNam.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TickNam.Location = new System.Drawing.Point(191, 238);
+            this.TickNam.Name = "TickNam";
+            this.TickNam.Size = new System.Drawing.Size(68, 27);
+            this.TickNam.TabIndex = 11;
+            this.TickNam.TabStop = true;
+            this.TickNam.Text = "Nam";
+            this.TickNam.UseVisualStyleBackColor = true;
             // 
-            // rdoNu
+            // TichNu
             // 
-            this.rdoNu.AutoSize = true;
-            this.rdoNu.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoNu.Location = new System.Drawing.Point(378, 238);
-            this.rdoNu.Name = "rdoNu";
-            this.rdoNu.Size = new System.Drawing.Size(54, 27);
-            this.rdoNu.TabIndex = 15;
-            this.rdoNu.TabStop = true;
-            this.rdoNu.Text = "Nữ";
-            this.rdoNu.UseVisualStyleBackColor = true;
+            this.TichNu.AutoSize = true;
+            this.TichNu.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TichNu.Location = new System.Drawing.Point(378, 238);
+            this.TichNu.Name = "TichNu";
+            this.TichNu.Size = new System.Drawing.Size(54, 27);
+            this.TichNu.TabIndex = 15;
+            this.TichNu.TabStop = true;
+            this.TichNu.Text = "Nữ";
+            this.TichNu.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
+            // textNgaySinh
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(191, 305);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(241, 30);
-            this.dateTimePicker1.TabIndex = 16;
+            this.textNgaySinh.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textNgaySinh.Location = new System.Drawing.Point(191, 305);
+            this.textNgaySinh.Name = "textNgaySinh";
+            this.textNgaySinh.Size = new System.Drawing.Size(241, 30);
+            this.textNgaySinh.TabIndex = 16;
             // 
-            // textBox2
+            // textHoTen
             // 
-            this.textBox2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox2.Location = new System.Drawing.Point(191, 155);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(241, 27);
-            this.textBox2.TabIndex = 10;
+            this.textHoTen.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textHoTen.Location = new System.Drawing.Point(191, 155);
+            this.textHoTen.Name = "textHoTen";
+            this.textHoTen.Size = new System.Drawing.Size(241, 27);
+            this.textHoTen.TabIndex = 10;
             // 
-            // textBox3
+            // textUser
             // 
-            this.textBox3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox3.Location = new System.Drawing.Point(791, 82);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(241, 27);
-            this.textBox3.TabIndex = 19;
+            this.textUser.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textUser.Location = new System.Drawing.Point(791, 82);
+            this.textUser.Name = "textUser";
+            this.textUser.Size = new System.Drawing.Size(241, 27);
+            this.textUser.TabIndex = 19;
             // 
-            // textBox4
+            // textPassword
             // 
-            this.textBox4.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox4.Location = new System.Drawing.Point(791, 155);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(241, 27);
-            this.textBox4.TabIndex = 20;
+            this.textPassword.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textPassword.Location = new System.Drawing.Point(791, 155);
+            this.textPassword.Name = "textPassword";
+            this.textPassword.Size = new System.Drawing.Size(241, 27);
+            this.textPassword.TabIndex = 20;
             // 
-            // textBox5
+            // textSDT
             // 
-            this.textBox5.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox5.Location = new System.Drawing.Point(184, 458);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(248, 27);
-            this.textBox5.TabIndex = 18;
+            this.textSDT.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textSDT.Location = new System.Drawing.Point(184, 458);
+            this.textSDT.Name = "textSDT";
+            this.textSDT.Size = new System.Drawing.Size(248, 27);
+            this.textSDT.TabIndex = 18;
             // 
-            // txtAddress
+            // txtDiaChiNV
             // 
-            this.txtAddress.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtAddress.Location = new System.Drawing.Point(184, 381);
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(248, 27);
-            this.txtAddress.TabIndex = 17;
+            this.txtDiaChiNV.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtDiaChiNV.Location = new System.Drawing.Point(184, 381);
+            this.txtDiaChiNV.Name = "txtDiaChiNV";
+            this.txtDiaChiNV.Size = new System.Drawing.Size(248, 27);
+            this.txtDiaChiNV.TabIndex = 17;
             // 
             // iconButton1
             // 
@@ -252,6 +252,7 @@
             this.iconButton2.Text = "Đồng ý";
             this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.iconButton2.UseVisualStyleBackColor = true;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
             // FthemNhanVien
             // 
@@ -260,15 +261,15 @@
             this.ClientSize = new System.Drawing.Size(1095, 531);
             this.Controls.Add(this.iconButton2);
             this.Controls.Add(this.iconButton1);
-            this.Controls.Add(this.txtAddress);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.rdoNu);
-            this.Controls.Add(this.rdoNam);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDiaChiNV);
+            this.Controls.Add(this.textSDT);
+            this.Controls.Add(this.textPassword);
+            this.Controls.Add(this.textUser);
+            this.Controls.Add(this.textHoTen);
+            this.Controls.Add(this.textNgaySinh);
+            this.Controls.Add(this.TichNu);
+            this.Controls.Add(this.TickNam);
+            this.Controls.Add(this.textMANV);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -298,15 +299,15 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.RadioButton rdoNam;
-        private System.Windows.Forms.RadioButton rdoNu;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.TextBox textMANV;
+        private System.Windows.Forms.RadioButton TickNam;
+        private System.Windows.Forms.RadioButton TichNu;
+        private System.Windows.Forms.DateTimePicker textNgaySinh;
+        private System.Windows.Forms.TextBox textHoTen;
+        private System.Windows.Forms.TextBox textUser;
+        private System.Windows.Forms.TextBox textPassword;
+        private System.Windows.Forms.TextBox textSDT;
+        private System.Windows.Forms.TextBox txtDiaChiNV;
         private FontAwesome.Sharp.IconButton iconButton1;
         private FontAwesome.Sharp.IconButton iconButton2;
     }
