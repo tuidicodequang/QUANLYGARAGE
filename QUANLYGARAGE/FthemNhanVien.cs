@@ -33,7 +33,7 @@ namespace QUANLYGARAGE
                 string connectionString = @"Data Source=DESKTOP-LACK88J\SQLEXPRESS;Initial Catalog=QuanlyOto;Integrated Security=True"; // Thay thế bằng chuỗi kết nối của bạn
 
                 string maNV = textMANV.Text;
-                string hoTen = textHoTen.Text;
+                string hoTen = textHoTen.Text; 
                 string diaChi = txtDiaChiNV.Text;
                 string sdt = textSDT.Text;
                 string gioiTinh = TickNam.Checked ? TickNam.Text : TichNu.Text;
