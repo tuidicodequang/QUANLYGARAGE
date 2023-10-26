@@ -220,5 +220,8 @@
   <ItemGroup>
     <None Include="Resources\wallpapersden.com_lamborghini-aventador-svj-roadster-xago_1920x10801.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

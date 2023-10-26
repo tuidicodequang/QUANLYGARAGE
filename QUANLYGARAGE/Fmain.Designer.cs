@@ -561,21 +561,21 @@ namespace QUANLYGARAGE
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.BarChart;
             this.iconButton1.IconColor = System.Drawing.Color.White;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(170, 2);
+            this.iconButton1.Location = new System.Drawing.Point(179, 2);
             this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(62, 44);
+            this.iconButton1.Size = new System.Drawing.Size(53, 39);
             this.iconButton1.TabIndex = 2;
             this.iconButton1.UseVisualStyleBackColor = true;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::QUANLYGARAGE.Properties.Resources.lamborghini_loginpicture;
+            this.pictureBox1.Image = global::QUANLYGARAGE.Properties.Resources.Picture1;
             this.pictureBox1.Location = new System.Drawing.Point(0, 2);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(169, 71);
+            this.pictureBox1.Size = new System.Drawing.Size(226, 95);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
