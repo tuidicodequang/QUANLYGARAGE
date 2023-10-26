@@ -36,7 +36,6 @@
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgvNV = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.CustomerId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sex = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,6 +44,7 @@
             this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.password = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNV)).BeginInit();
@@ -117,7 +117,6 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.dgvNV);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnUpdate);
             this.panel1.Controls.Add(this.btnDelete);
@@ -125,6 +124,7 @@
             this.panel1.Controls.Add(this.btnInsert);
             this.panel1.Controls.Add(this.iconPictureBox1);
             this.panel1.Controls.Add(this.btnSearch);
+            this.panel1.Controls.Add(this.dgvNV);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -136,6 +136,7 @@
             this.dgvNV.AllowUserToAddRows = false;
             this.dgvNV.AllowUserToDeleteRows = false;
             this.dgvNV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvNV.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvNV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvNV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -147,26 +148,16 @@
             this.Phone,
             this.Column1,
             this.password});
-            this.dgvNV.Location = new System.Drawing.Point(13, 228);
+            this.dgvNV.GridColor = System.Drawing.SystemColors.ButtonFace;
+            this.dgvNV.Location = new System.Drawing.Point(0, 228);
             this.dgvNV.Margin = new System.Windows.Forms.Padding(4);
             this.dgvNV.MultiSelect = false;
             this.dgvNV.Name = "dgvNV";
             this.dgvNV.ReadOnly = true;
             this.dgvNV.RowHeadersWidth = 51;
             this.dgvNV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvNV.Size = new System.Drawing.Size(1326, 579);
+            this.dgvNV.Size = new System.Drawing.Size(1339, 579);
             this.dgvNV.TabIndex = 19;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(606, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(173, 38);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Nhân viên";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // CustomerId
             // 
@@ -237,6 +228,17 @@
             this.password.Name = "password";
             this.password.ReadOnly = true;
             this.password.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.Location = new System.Drawing.Point(606, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(173, 38);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Nhân viên";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // FNhanVien
             // 

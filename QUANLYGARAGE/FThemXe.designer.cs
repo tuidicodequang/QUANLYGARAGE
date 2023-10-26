@@ -30,21 +30,21 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FThemXe));
             this.cboModel = new System.Windows.Forms.ComboBox();
-            this.cboStatus = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtAddInfo = new System.Windows.Forms.TextBox();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.btnCancel = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textMaSP = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textGia = new System.Windows.Forms.TextBox();
+            this.textModel = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.textMau = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -60,18 +60,6 @@
             this.cboModel.Size = new System.Drawing.Size(225, 28);
             this.cboModel.TabIndex = 13;
             // 
-            // cboStatus
-            // 
-            this.cboStatus.AutoSize = true;
-            this.cboStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.cboStatus.Location = new System.Drawing.Point(173, 423);
-            this.cboStatus.Margin = new System.Windows.Forms.Padding(4);
-            this.cboStatus.Name = "cboStatus";
-            this.cboStatus.Size = new System.Drawing.Size(94, 22);
-            this.cboStatus.TabIndex = 14;
-            this.cboStatus.Text = "Còn hàng";
-            this.cboStatus.UseVisualStyleBackColor = true;
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.txtAddInfo);
@@ -83,7 +71,7 @@
             this.groupBox2.Size = new System.Drawing.Size(429, 166);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Mô tả";
+            this.groupBox2.Text = "Ảnh xe";
             // 
             // txtAddInfo
             // 
@@ -109,6 +97,7 @@
             this.iconButton1.Text = "Đồng ý";
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // btnCancel
             // 
@@ -137,84 +126,24 @@
             this.label1.Text = "Thêm xe";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox3
+            // textMaSP
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBox3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox3.Location = new System.Drawing.Point(173, 143);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(225, 27);
-            this.textBox3.TabIndex = 30;
+            this.textMaSP.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textMaSP.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textMaSP.Location = new System.Drawing.Point(173, 143);
+            this.textMaSP.Name = "textMaSP";
+            this.textMaSP.Size = new System.Drawing.Size(225, 27);
+            this.textMaSP.TabIndex = 30;
             // 
-            // panel1
+            // label7
             // 
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.btnCancel);
-            this.panel1.Controls.Add(this.iconButton1);
-            this.panel1.Controls.Add(this.groupBox2);
-            this.panel1.Controls.Add(this.cboStatus);
-            this.panel1.Controls.Add(this.cboModel);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1027, 572);
-            this.panel1.TabIndex = 30;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label4.Location = new System.Drawing.Point(36, 426);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 19);
-            this.label4.TabIndex = 38;
-            this.label4.Text = "Trạng thái";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.Location = new System.Drawing.Point(36, 292);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 19);
-            this.label3.TabIndex = 37;
-            this.label3.Text = "Model";
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBox2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox2.Location = new System.Drawing.Point(173, 284);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(225, 27);
-            this.textBox2.TabIndex = 36;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBox1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox1.Location = new System.Drawing.Point(173, 363);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(225, 27);
-            this.textBox1.TabIndex = 34;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label8.Location = new System.Drawing.Point(36, 371);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(34, 19);
-            this.label8.TabIndex = 33;
-            this.label8.Text = "Giá";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label7.Location = new System.Drawing.Point(36, 151);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(109, 19);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "Mã sản Phẩm";
             // 
             // label2
             // 
@@ -226,15 +155,84 @@
             this.label2.TabIndex = 32;
             this.label2.Text = "Hãng xe";
             // 
-            // label7
+            // label8
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label7.Location = new System.Drawing.Point(36, 151);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 19);
-            this.label7.TabIndex = 31;
-            this.label7.Text = "Số xe";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label8.Location = new System.Drawing.Point(36, 454);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(34, 19);
+            this.label8.TabIndex = 33;
+            this.label8.Text = "Giá";
+            // 
+            // textGia
+            // 
+            this.textGia.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textGia.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textGia.Location = new System.Drawing.Point(173, 446);
+            this.textGia.Name = "textGia";
+            this.textGia.Size = new System.Drawing.Size(225, 27);
+            this.textGia.TabIndex = 34;
+            // 
+            // textModel
+            // 
+            this.textModel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textModel.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textModel.Location = new System.Drawing.Point(173, 284);
+            this.textModel.Name = "textModel";
+            this.textModel.Size = new System.Drawing.Size(225, 27);
+            this.textModel.TabIndex = 36;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.Location = new System.Drawing.Point(36, 292);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(52, 19);
+            this.label3.TabIndex = 37;
+            this.label3.Text = "Model";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.textMau);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.textModel);
+            this.panel1.Controls.Add(this.textGia);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.textMaSP);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.btnCancel);
+            this.panel1.Controls.Add(this.iconButton1);
+            this.panel1.Controls.Add(this.groupBox2);
+            this.panel1.Controls.Add(this.cboModel);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1027, 572);
+            this.panel1.TabIndex = 30;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label4.Location = new System.Drawing.Point(36, 371);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(45, 19);
+            this.label4.TabIndex = 38;
+            this.label4.Text = "Màu ";
+            // 
+            // textMau
+            // 
+            this.textMau.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textMau.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textMau.Location = new System.Drawing.Point(173, 363);
+            this.textMau.Name = "textMau";
+            this.textMau.Size = new System.Drawing.Size(225, 27);
+            this.textMau.TabIndex = 39;
             // 
             // FThemXe
             // 
@@ -256,21 +254,22 @@
         }
 
         #endregion
+
         private System.Windows.Forms.ComboBox cboModel;
-        private System.Windows.Forms.CheckBox cboStatus;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox txtAddInfo;
         private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textMaSP;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textGia;
+        private System.Windows.Forms.TextBox textModel;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox textMau;
+        private System.Windows.Forms.Label label4;
     }
 }

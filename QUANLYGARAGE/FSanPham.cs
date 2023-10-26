@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -43,6 +44,45 @@ namespace Project
         private void dgvListCar_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void FCarList_Load(object sender, EventArgs e)
+        {
+            
+                string connectionString = @"Data Source=DESKTOP-LACK88J\SQLEXPRESS;Initial Catalog=QuanlyOto;Integrated Security=True"; // Thay thế bằng chuỗi kết nối của bạn
+
+                string query = "SELECT * FROM SanPham"; // Truy vấn để lấy dữ liệu nhân viên
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    SqlCommand command = new SqlCommand(query, connection);
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    DataTable dataTable = new DataTable();
+
+                    adapter.Fill(dataTable);
+
+                dgvListCar.DataSource = dataTable; // Gán dữ liệu vào DataGridView
+                }
+         }
+        
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string connectionString = @"Data Source=DESKTOP-LACK88J\SQLEXPRESS;Initial Catalog=QuanlyOto;Integrated Security=True"; // Thay thế bằng chuỗi kết nối của bạn
+            string tensanpham = TimXe.Text;
+            string query = "SELECT * FROM SanPham WHERE TenSP = @TenSanPham"; // Truy vấn để lấy dữ liệu nhân viên
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@TenSanPham", tensanpham);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                DataTable dataTable = new DataTable();
+
+                adapter.Fill(dataTable);
+
+                dgvListCar.DataSource = dataTable; // Gán dữ liệu vào DataGridView
+            }
         }
     }
 }
