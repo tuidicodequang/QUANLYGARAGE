@@ -61,8 +61,8 @@ namespace QUANLYGARAGE
         private void btnSearch_Click(object sender, EventArgs e)
         {
             string connectionString = @"Data Source=DESKTOP-LACK88J\SQLEXPRESS;Initial Catalog=QuanlyOto;Integrated Security=True"; // Thay thế bằng chuỗi kết nối của bạn
-
-            string query = "SELECT * FROM NhanVien "; // Truy vấn để lấy dữ liệu nhân viên
+            string tenNhanVien=textTimNV.Text;
+            string query = "SELECT * FROM NhanVien where NhanVien= '"+tenNhanVien+"'"; // Truy vấn để lấy dữ liệu nhân viên
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
