@@ -22,7 +22,7 @@ namespace WindowsFormsApp1
         private DataProvider() { }
 
 
-        string connectionString = @"Data Source=DESKTOP-6ABDHJO\SQLEXPRESS;Initial Catalog=QuanLyOTo;Integrated Security=True";
+       public string connectionString = @"Data Source=DESKTOP-LACK88J\SQLEXPRESS;Initial Catalog=QuanLyOTo;Integrated Security=True";
 
         public DataTable ExcuteQuery(string query, object[] parameter = null)//tạo ra 1 bảng dùng query
         {

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1;
 
 namespace Project
 {
@@ -38,6 +39,21 @@ namespace Project
         {
             FThemKhachHang f= new FThemKhachHang();
             OpenchildForm(f);
+        }
+
+        private void FKhachHang_Load(object sender, EventArgs e)
+        {
+            string query = "SELECT * FROM KhachHang";
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+            dgvCustomer.DataSource= data;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string tenKhachHang = TimKH.Text;
+            string query = "SELECT * FROM KhachHang where HoTen = '"+tenKhachHang+"'";
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+            dgvCustomer.DataSource = data;
         }
     }
 }
