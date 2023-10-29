@@ -22,7 +22,7 @@ namespace WindowsFormsApp1
         private DataProvider() { }
 
 
-       public string connectionString = @"Data Source=DESKTOP-LACK88J\SQLEXPRESS;Initial Catalog=QuanLyOTo;Integrated Security=True";
+        string connectionString = @"Data Source=DESKTOP-6ABDHJO\SQLEXPRESS;Initial Catalog=QuanLyOTo;Integrated Security=True";
 
         public DataTable ExcuteQuery(string query, object[] parameter = null)//tạo ra 1 bảng dùng query
         {
@@ -62,7 +62,7 @@ namespace WindowsFormsApp1
             }
             return data;
         }
-        public int ExcuteNonQuery(string query, object[] parameter = null)//dem số dòng chạy thành công
+        /*public int ExcuteNonQuery(string query, object[] parameter = null)
         {
             int data = 0;
             try
@@ -98,7 +98,7 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Lỗi kết nối");
             }
             return data;
-        }
+        }*/
 
         public object ExcuteScalar(string query, object[] parameter = null)//tạo ra 1 bảng dùng query
         {

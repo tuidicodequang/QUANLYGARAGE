@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QUANLYGARAGE;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,8 @@ namespace Project
         public FThemXe()
         {
             InitializeComponent();
+            LoadcboModel();
+            
         }
         private void btnCancel_Click(object sender, EventArgs e)
         {
@@ -28,7 +31,7 @@ namespace Project
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            string connectionString = DataProvider.Instance.connectionString; // Thay thế bằng chuỗi kết nối của bạn
+            string connectionString = @"Data Source=DESKTOP-6ABDHJO\SQLEXPRESS;Initial Catalog=QuanlyOto;Integrated Security=True"; // Thay thế bằng chuỗi kết nối của bạn
 
             string maSanPham = textMaSP.Text;
             string Hangxe = cboModel.Text;
@@ -65,5 +68,25 @@ namespace Project
                 }
             }
         }
+        void LoadcboModel()
+        {
+            SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-6ABDHJO\SQLEXPRESS;Initial Catalog=QuanLyOTo;Integrated Security=True");
+            string query = "select * from dbo.Hang";
+            {
+                conn.Open();
+        
+                SqlCommand cmd = new SqlCommand(query, conn);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable dataTable = new DataTable();
+
+                adapter.Fill(dataTable);
+
+                cboModel.DataSource = dataTable;
+                cboModel.DisplayMember = "TenHang";
+
+            }
+            
+        }
+        
     }
 }

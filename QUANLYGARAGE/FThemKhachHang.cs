@@ -9,7 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls.Primitives;
 using System.Windows.Forms;
-using WindowsFormsApp1;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace QUANLYGARAGE
@@ -28,24 +27,24 @@ namespace QUANLYGARAGE
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
-            string connectionString = DataProvider.Instance.connectionString;
+            string connectionString = @"Data Source=DESKTOP-6ABDHJO\SQLEXPRESS;Initial Catalog=QuanlyOto;Integrated Security=True"; // Thay thế bằng chuỗi kết nối của bạn
 
             string maKH = textMaKH.Text;
             string hoTen = textHoTen.Text;
-            string diaChi = textDiachi.Text;
+            string diaChi = textDiaChiKH.Text;
             string sdt = textSDT.Text;
-            string gioiTinh = TichNam.Checked ? TichNam.Text : TichNu.Text;
-            DateTime ngaySinh = NgaySinh.Value;
+            string gioiTinh = TickNam.Checked ? TickNam.Text : TickNu.Text;
+            DateTime ngaySinh = textNgaySinh.Value;
             string user = textUser.Text;
             string password = textPassword.Text;
 
-            string query = "INSERT INTO KhachHang (Username, MaKH, HoTen, GioiTinh, NgaySinh,MatKhau, DiaChi, SDT) VALUES (@Username,@MaKH, @HoTen, @GioiTinh, @NgaySinh,@MatKhau, @DiaChi, @SDT)";
+            string query = "INSERT INTO KhachHang (Username, MaKH, HoTen, GioiTinh, NgaySinh,MatKhau, DiaChi, SDT) VALUES (@Username,@MaNV, @HoTen, @GioiTinh, @NgaySinh,@MatKhau, @DiaChi, @SDT)";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Username", user);
-                command.Parameters.AddWithValue("@MaKH", maKH);
+                command.Parameters.AddWithValue("@MaNV", maKH);
                 command.Parameters.AddWithValue("@HoTen", hoTen);
                 command.Parameters.AddWithValue("@GioiTinh", gioiTinh);
                 command.Parameters.AddWithValue("@NgaySinh", ngaySinh);
@@ -59,15 +58,14 @@ namespace QUANLYGARAGE
 
                 if (rowsAffected > 0)
                 {
-                    MessageBox.Show("Thêm khach hang thành công!");
+                    MessageBox.Show("Thêm nhân viên thành công!");
                     // Thực hiện các công việc khác sau khi thêm thành công
                 }
                 else
                 {
-                    MessageBox.Show("Thêm khach hang thất bại!");
+                    MessageBox.Show("Thêm nhân viên thất bại!");
                 }
             }
         }
     }
-    }
-
+}
