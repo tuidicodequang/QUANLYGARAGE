@@ -114,8 +114,10 @@
     <Compile Include="FdoanhThu.designer.cs">
       <DependentUpon>FdoanhThu.cs</DependentUpon>
     </Compile>
+    <Compile Include="ItemHoadon.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RanDom.cs" />
     <EmbeddedResource Include="Flogin.resx">
       <DependentUpon>Flogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -142,6 +144,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FKhachHang.resx">
       <DependentUpon>FKhachHang.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FdoanhThu.resx">
       <DependentUpon>FdoanhThu.cs</DependentUpon>

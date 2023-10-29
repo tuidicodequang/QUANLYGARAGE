@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp1;
 
 namespace Project
 {
@@ -49,8 +48,8 @@ namespace Project
 
         private void FCarList_Load(object sender, EventArgs e)
         {
-
-            string connectionString = DataProvider.Instance.connectionString;
+            
+                string connectionString = @"Data Source=DESKTOP-LACK88J\SQLEXPRESS;Initial Catalog=QuanlyOto;Integrated Security=True"; // Thay thế bằng chuỗi kết nối của bạn
 
                 string query = "SELECT * FROM SanPham"; // Truy vấn để lấy dữ liệu nhân viên
 
@@ -69,7 +68,7 @@ namespace Project
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string connectionString = DataProvider.Instance.connectionString;
+            string connectionString = @"Data Source=DESKTOP-LACK88J\SQLEXPRESS;Initial Catalog=QuanlyOto;Integrated Security=True"; // Thay thế bằng chuỗi kết nối của bạn
             string tensanpham = TimXe.Text;
             string query = "SELECT * FROM SanPham WHERE TenSP = @TenSanPham"; // Truy vấn để lấy dữ liệu nhân viên
 
