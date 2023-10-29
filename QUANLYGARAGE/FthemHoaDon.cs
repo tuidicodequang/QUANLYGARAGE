@@ -13,10 +13,10 @@ using WindowsFormsApp1;
 
 namespace Project
 {
-    public partial class frmCreateOrder : Form
+    public partial class FthemHoaDon : Form
     {
        
-        public frmCreateOrder()
+        public FthemHoaDon()
         {
             InitializeComponent();
             LoadTenKH();
@@ -140,7 +140,7 @@ namespace Project
 
         private void buttonDongY_Click(object sender, EventArgs e)
         {
-            string connectionString = @"Data Source=DESKTOP-6ABDHJO\SQLEXPRESS;Initial Catalog=QuanlyOto;Integrated Security=True";
+            string connectionString = DataProvider.Instance.connectionString;
 
 
 
@@ -188,6 +188,11 @@ namespace Project
 
                 contextMenuStrip1.Show(dgvSP, e.X, e.Y);
             }
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls.Primitives;
 using System.Windows.Forms;
+using WindowsFormsApp1;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace QUANLYGARAGE
@@ -27,7 +28,7 @@ namespace QUANLYGARAGE
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
-            string connectionString = @"Data Source=DESKTOP-6ABDHJO\SQLEXPRESS;Initial Catalog=QuanlyOto;Integrated Security=True"; // Thay thế bằng chuỗi kết nối của bạn
+            string connectionString = DataProvider.Instance.connectionString; // Thay thế bằng chuỗi kết nối của bạn
 
             string maKH = textMaKH.Text;
             string hoTen = textHoTen.Text;

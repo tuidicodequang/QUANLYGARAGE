@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1;
 
 namespace QUANLYGARAGE
 {
@@ -42,7 +43,7 @@ namespace QUANLYGARAGE
 
         private void FNhanVien_Load(object sender, EventArgs e)
         {
-            string connectionString = @"Data Source=DESKTOP-LACK88J\SQLEXPRESS;Initial Catalog=QuanlyOto;Integrated Security=True"; // Thay thế bằng chuỗi kết nối của bạn
+            string connectionString = DataProvider.Instance.connectionString;
 
             string query = "SELECT * FROM NhanVien"; // Truy vấn để lấy dữ liệu nhân viên
 
@@ -61,7 +62,7 @@ namespace QUANLYGARAGE
         private void btnSearch_Click(object sender, EventArgs e)
         {
            
-            string connectionString = @"Data Source=DESKTOP-LACK88J\SQLEXPRESS;Initial Catalog=QuanlyOto;Integrated Security=True"; // Thay thế bằng chuỗi kết nối của bạn
+            string connectionString = DataProvider.Instance.connectionString; // Thay thế bằng chuỗi kết nối của bạn
             string tenNhanVien = textTimNV.Text;
             string query = "SELECT * FROM NhanVien WHERE HoTen = @TenNhanVien"; // Truy vấn để lấy dữ liệu nhân viên
 

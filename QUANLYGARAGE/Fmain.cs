@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1;
 
 namespace QUANLYGARAGE
 {
@@ -125,7 +126,7 @@ namespace QUANLYGARAGE
 
         private void fTabManager_Load(object sender, EventArgs e)
         {
-            string connectionString = @"Data Source=DESKTOP-LACK88J\SQLEXPRESS;Initial Catalog=QuanLyOTo;Integrated Security=True";
+            string connectionString = DataProvider.Instance.connectionString;
             string countNhanVien = "SELECT COUNT(*) FROM NhanVien";
             string countKhachHang = "SELECT COUNT(*) FROM KhachHang";
             string countSanPham = "SELECT COUNT(*) FROM SanPham";
@@ -149,7 +150,8 @@ namespace QUANLYGARAGE
 
         private void iconButton3_Click(object sender, EventArgs e)
         {
-
+            FHoaDon f = new FHoaDon();
+            OpenchildForm(f);
         }
     }
 }
