@@ -31,7 +31,7 @@ namespace Project
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            string connectionString = DataProvider.Instance.connectionString;
+            string connectionString = @"Data Source=DESKTOP-6ABDHJO\SQLEXPRESS;Initial Catalog=QuanlyOto;Integrated Security=True"; // Thay thế bằng chuỗi kết nối của bạn
 
             string maSanPham = textMaSP.Text;
             string Hangxe = cboModel.Text;
@@ -70,7 +70,7 @@ namespace Project
         }
         void LoadcboModel()
         {
-            SqlConnection conn = new SqlConnection(DataProvider.Instance.connectionString);
+            SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-6ABDHJO\SQLEXPRESS;Initial Catalog=QuanLyOTo;Integrated Security=True");
             string query = "select * from dbo.Hang";
             {
                 conn.Open();
