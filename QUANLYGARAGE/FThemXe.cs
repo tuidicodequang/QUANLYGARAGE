@@ -87,6 +87,12 @@ namespace Project
             }
             
         }
-        
+
+        private void FThemXe_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'quanlyOtoDataSet.Hang' table. You can move, or remove it, as needed.
+            this.hangTableAdapter.Fill(this.quanlyOtoDataSet.Hang);
+
+        }
     }
 }

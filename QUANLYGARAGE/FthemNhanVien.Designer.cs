@@ -143,22 +143,23 @@
             // textMANV
             // 
             this.textMANV.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textMANV.Location = new System.Drawing.Point(191, 82);
+            this.textMANV.Location = new System.Drawing.Point(213, 82);
             this.textMANV.Name = "textMANV";
-            this.textMANV.Size = new System.Drawing.Size(241, 27);
+            this.textMANV.Size = new System.Drawing.Size(253, 27);
             this.textMANV.TabIndex = 9;
             // 
             // TickNam
             // 
             this.TickNam.AutoSize = true;
             this.TickNam.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TickNam.Location = new System.Drawing.Point(191, 238);
+            this.TickNam.Location = new System.Drawing.Point(213, 237);
             this.TickNam.Name = "TickNam";
             this.TickNam.Size = new System.Drawing.Size(68, 27);
             this.TickNam.TabIndex = 11;
             this.TickNam.TabStop = true;
             this.TickNam.Text = "Nam";
             this.TickNam.UseVisualStyleBackColor = true;
+            this.TickNam.CheckedChanged += new System.EventHandler(this.TickNam_CheckedChanged);
             // 
             // TichNu
             // 
@@ -175,17 +176,17 @@
             // textNgaySinh
             // 
             this.textNgaySinh.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textNgaySinh.Location = new System.Drawing.Point(191, 305);
+            this.textNgaySinh.Location = new System.Drawing.Point(213, 305);
             this.textNgaySinh.Name = "textNgaySinh";
-            this.textNgaySinh.Size = new System.Drawing.Size(241, 30);
+            this.textNgaySinh.Size = new System.Drawing.Size(253, 30);
             this.textNgaySinh.TabIndex = 16;
             // 
             // textHoTen
             // 
             this.textHoTen.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textHoTen.Location = new System.Drawing.Point(191, 155);
+            this.textHoTen.Location = new System.Drawing.Point(213, 155);
             this.textHoTen.Name = "textHoTen";
-            this.textHoTen.Size = new System.Drawing.Size(241, 27);
+            this.textHoTen.Size = new System.Drawing.Size(253, 27);
             this.textHoTen.TabIndex = 10;
             // 
             // textUser
@@ -207,7 +208,7 @@
             // textSDT
             // 
             this.textSDT.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textSDT.Location = new System.Drawing.Point(184, 458);
+            this.textSDT.Location = new System.Drawing.Point(213, 458);
             this.textSDT.Name = "textSDT";
             this.textSDT.Size = new System.Drawing.Size(248, 27);
             this.textSDT.TabIndex = 18;
@@ -215,7 +216,7 @@
             // txtDiaChiNV
             // 
             this.txtDiaChiNV.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtDiaChiNV.Location = new System.Drawing.Point(184, 381);
+            this.txtDiaChiNV.Location = new System.Drawing.Point(213, 381);
             this.txtDiaChiNV.Name = "txtDiaChiNV";
             this.txtDiaChiNV.Size = new System.Drawing.Size(248, 27);
             this.txtDiaChiNV.TabIndex = 17;

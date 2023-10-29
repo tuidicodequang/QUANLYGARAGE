@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FThemXe));
             this.cboModel = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -43,22 +44,30 @@
             this.textModel = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.textMau = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.quanlyOtoDataSet = new QUANLYGARAGE.QuanlyOtoDataSet();
+            this.hangBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hangTableAdapter = new QUANLYGARAGE.QuanlyOtoDataSetTableAdapters.HangTableAdapter();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.quanlyOtoDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hangBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // cboModel
             // 
+            this.cboModel.DataSource = this.hangBindingSource;
+            this.cboModel.DisplayMember = "TenHang";
             this.cboModel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.cboModel.FormattingEnabled = true;
-            this.cboModel.Location = new System.Drawing.Point(173, 208);
+            this.cboModel.Location = new System.Drawing.Point(188, 208);
             this.cboModel.Margin = new System.Windows.Forms.Padding(4);
             this.cboModel.Name = "cboModel";
-            this.cboModel.Size = new System.Drawing.Size(225, 28);
+            this.cboModel.Size = new System.Drawing.Size(210, 28);
             this.cboModel.TabIndex = 13;
+            this.cboModel.ValueMember = "TenHang";
             // 
             // groupBox2
             // 
@@ -130,9 +139,9 @@
             // 
             this.textMaSP.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textMaSP.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textMaSP.Location = new System.Drawing.Point(173, 143);
+            this.textMaSP.Location = new System.Drawing.Point(188, 143);
             this.textMaSP.Name = "textMaSP";
-            this.textMaSP.Size = new System.Drawing.Size(225, 27);
+            this.textMaSP.Size = new System.Drawing.Size(210, 27);
             this.textMaSP.TabIndex = 30;
             // 
             // label7
@@ -169,18 +178,18 @@
             // 
             this.textGia.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textGia.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textGia.Location = new System.Drawing.Point(173, 446);
+            this.textGia.Location = new System.Drawing.Point(188, 446);
             this.textGia.Name = "textGia";
-            this.textGia.Size = new System.Drawing.Size(225, 27);
+            this.textGia.Size = new System.Drawing.Size(210, 27);
             this.textGia.TabIndex = 34;
             // 
             // textModel
             // 
             this.textModel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textModel.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textModel.Location = new System.Drawing.Point(173, 284);
+            this.textModel.Location = new System.Drawing.Point(188, 284);
             this.textModel.Name = "textModel";
-            this.textModel.Size = new System.Drawing.Size(225, 27);
+            this.textModel.Size = new System.Drawing.Size(210, 27);
             this.textModel.TabIndex = 36;
             // 
             // label3
@@ -215,6 +224,15 @@
             this.panel1.Size = new System.Drawing.Size(1027, 572);
             this.panel1.TabIndex = 30;
             // 
+            // textMau
+            // 
+            this.textMau.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textMau.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textMau.Location = new System.Drawing.Point(188, 363);
+            this.textMau.Name = "textMau";
+            this.textMau.Size = new System.Drawing.Size(210, 27);
+            this.textMau.TabIndex = 39;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -225,14 +243,19 @@
             this.label4.TabIndex = 38;
             this.label4.Text = "Màu ";
             // 
-            // textMau
+            // quanlyOtoDataSet
             // 
-            this.textMau.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textMau.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textMau.Location = new System.Drawing.Point(173, 363);
-            this.textMau.Name = "textMau";
-            this.textMau.Size = new System.Drawing.Size(225, 27);
-            this.textMau.TabIndex = 39;
+            this.quanlyOtoDataSet.DataSetName = "QuanlyOtoDataSet";
+            this.quanlyOtoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // hangBindingSource
+            // 
+            this.hangBindingSource.DataMember = "Hang";
+            this.hangBindingSource.DataSource = this.quanlyOtoDataSet;
+            // 
+            // hangTableAdapter
+            // 
+            this.hangTableAdapter.ClearBeforeFill = true;
             // 
             // FThemXe
             // 
@@ -245,10 +268,13 @@
             this.Name = "FThemXe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCar";
+            this.Load += new System.EventHandler(this.FThemXe_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.quanlyOtoDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hangBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -271,5 +297,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textMau;
         private System.Windows.Forms.Label label4;
+        private QUANLYGARAGE.QuanlyOtoDataSet quanlyOtoDataSet;
+        private System.Windows.Forms.BindingSource hangBindingSource;
+        private QUANLYGARAGE.QuanlyOtoDataSetTableAdapters.HangTableAdapter hangTableAdapter;
     }
 }

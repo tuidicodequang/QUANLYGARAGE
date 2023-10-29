@@ -1,4 +1,4 @@
-﻿using QUANLYGARAGE;
+﻿using Project;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,12 +11,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1;
 
-namespace Project
+namespace QUANLYGARAGE
 {
-    public partial class FKhachHang : Form
+    public partial class FHoaDon : Form
     {
-
-        public FKhachHang()
+        public FHoaDon()
         {
             InitializeComponent();
         }
@@ -36,17 +35,11 @@ namespace Project
             childFrom.BringToFront();
             childFrom.Show();
         }
-        private void btnInsert_Click(object sender, EventArgs e)
-        {
-            FThemKhachHang f= new FThemKhachHang();
-            OpenchildForm(f);
-        }
-
-        private void FKhachHang_Load(object sender, EventArgs e)
+        private void FHoaDon_Load(object sender, EventArgs e)
         {
             string connectionString = DataProvider.Instance.connectionString;
 
-            string query = "SELECT * FROM KhachHang"; // Truy vấn để lấy dữ liệu nhân viên
+            string query = "SELECT * FROM HoaDon"; // Truy vấn để lấy dữ liệu nhân viên
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -56,8 +49,14 @@ namespace Project
 
                 adapter.Fill(dataTable);
 
-                dgvKH.DataSource = dataTable; // Gán dữ liệu vào DataGridView
+                dgvHD.DataSource = dataTable; // Gán dữ liệu vào DataGridView
             }
+        }
+
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+            FthemHoaDon f = new FthemHoaDon();
+            OpenchildForm(f);
         }
     }
 }
