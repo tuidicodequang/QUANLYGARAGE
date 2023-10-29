@@ -70,11 +70,6 @@ namespace QUANLYGARAGE
                     }
                 }
             }
-
-        private void TickNam_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
-    }
     }
 

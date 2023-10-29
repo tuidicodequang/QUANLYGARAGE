@@ -123,11 +123,6 @@
     <Compile Include="ItemHoadon.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuanlyOtoDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QuanlyOtoDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="RanDom.cs" />
     <EmbeddedResource Include="FHoaDon.resx">
       <DependentUpon>FHoaDon.cs</DependentUpon>
@@ -188,17 +183,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="QuanlyOtoDataSet.xsc">
-      <DependentUpon>QuanlyOtoDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="QuanlyOtoDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QuanlyOtoDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="QuanlyOtoDataSet.xss">
-      <DependentUpon>QuanlyOtoDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Resources\lamborghini_loginpicture.png" />
   </ItemGroup>
   <ItemGroup>
