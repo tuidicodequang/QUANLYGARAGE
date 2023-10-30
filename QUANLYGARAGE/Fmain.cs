@@ -1,4 +1,5 @@
-﻿using Project;
+﻿using DashboardApp;
+using Project;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -6,6 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -93,7 +95,7 @@ namespace QUANLYGARAGE
 
         private void ButtDoanhThu_Click(object sender, EventArgs e)
         {
-            FdoanhThu f= new FdoanhThu();
+            FdoanhThu f = new FdoanhThu();
             OpenchildForm(f);
         }
 
@@ -130,6 +132,7 @@ namespace QUANLYGARAGE
             string countNhanVien = "SELECT COUNT(*) FROM NhanVien";
             string countKhachHang = "SELECT COUNT(*) FROM KhachHang";
             string countSanPham = "SELECT COUNT(*) FROM SanPham";
+            string countHoaDon = "SELECT COUNT(*) FROM HoaDon";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -141,16 +144,31 @@ namespace QUANLYGARAGE
                 int KhachHang = (int)command2.ExecuteScalar();
                 SqlCommand command3 = new SqlCommand(countSanPham, connection);
                 int SanPham = (int)command3.ExecuteScalar();
+                SqlCommand command4 = new SqlCommand(countHoaDon, connection);
+                int HoaDon = (int)command4.ExecuteScalar();
 
                 lblCountNhanVien.Text = NhanVien.ToString() ;
                 lblCountKhachHang.Text = KhachHang.ToString();
                 lblCountSanPham.Text = SanPham.ToString();
+                lblcountHD.Text = HoaDon.ToString();
             }
         }
 
         private void iconButton3_Click(object sender, EventArgs e)
         {
             FHoaDon f = new FHoaDon();
+            OpenchildForm(f);
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            FdoanhThu f = new FdoanhThu();
+            OpenchildForm(f);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FdoanhThu f = new FdoanhThu();
             OpenchildForm(f);
         }
     }
