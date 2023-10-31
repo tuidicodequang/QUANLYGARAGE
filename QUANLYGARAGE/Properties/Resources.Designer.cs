@@ -73,6 +73,16 @@ namespace QUANLYGARAGE.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cardoanhthu {
+            get {
+                object obj = ResourceManager.GetObject("cardoanhthu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap checklist {
             get {
                 object obj = ResourceManager.GetObject("checklist", resourceCulture);
@@ -177,6 +187,16 @@ namespace QUANLYGARAGE.Properties {
         internal static System.Drawing.Bitmap Picture1 {
             get {
                 object obj = ResourceManager.GetObject("Picture1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_tick_vector_icon_png_image_963344 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-tick-vector-icon-png-image_963344", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

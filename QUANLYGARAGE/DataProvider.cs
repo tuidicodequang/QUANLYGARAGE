@@ -9,6 +9,21 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
+    public abstract class DbConnection
+    {
+        private readonly string connectionString;
+
+        public DbConnection()
+        {
+            // connectionString = @"Data Source=DESKTOP-LACK88J\SQLEXPRESS;Initial Catalog=NorthwindStore;Integrated Security=True";
+            connectionString = @"Data Source=DESKTOP-LACK88J\SQLEXPRESS;Initial Catalog=QuanlyOto;Integrated Security=True";
+        }
+
+        protected SqlConnection GetConnection()
+        {
+            return new SqlConnection(connectionString);
+        }
+    }
     public class DataProvider
     {
 
