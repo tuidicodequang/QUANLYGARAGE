@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1;
 
 namespace QUANLYGARAGE
 {
@@ -30,7 +31,7 @@ namespace QUANLYGARAGE
         private void iconButton2_Click(object sender, EventArgs e)
         {
             
-                string connectionString = @"Data Source=DESKTOP-LACK88J\SQLEXPRESS;Initial Catalog=QuanlyOto;Integrated Security=True"; // Thay thế bằng chuỗi kết nối của bạn
+                string connectionString = DataProvider.Instance.connectionString; // Thay thế bằng chuỗi kết nối của bạn
 
                 string maNV = textMANV.Text;
                 string hoTen = textHoTen.Text; 
@@ -70,11 +71,6 @@ namespace QUANLYGARAGE
                     }
                 }
             }
-
-        private void TickNam_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
-    }
     }
 
