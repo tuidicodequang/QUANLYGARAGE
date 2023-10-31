@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1;
 
 namespace QUANLYGARAGE
 {
@@ -20,7 +21,7 @@ namespace QUANLYGARAGE
 
         private void buttLogin_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-LACK88J\SQLEXPRESS;Initial Catalog=QuanLyOTo;Integrated Security=True");
+            SqlConnection conn = new SqlConnection(DataProvider.Instance.connectionString);
             try
             {
                 conn.Open();
