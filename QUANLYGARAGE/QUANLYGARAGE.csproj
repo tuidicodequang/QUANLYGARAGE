@@ -296,5 +296,14 @@
   <ItemGroup>
     <None Include="Resources\pngtree-tick-vector-icon-png-image_963344.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people_9968491.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_4034499.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car_7260929.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

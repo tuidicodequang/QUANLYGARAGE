@@ -37,8 +37,8 @@ namespace DashboardApp
             if (refreshData == true)
             {
                 lblNumOrders.Text = model.NumOrders.ToString();
-                lblTotalRevenue.Text = "VNĐ" + model.TotalRevenue.ToString();
-                lblTotalProfit.Text = "VNĐ" + model.TotalProfit.ToString();
+                lblTotalRevenue.Text = "VNĐ " + model.TotalRevenue.ToString();
+                lblTotalProfit.Text = "VNĐ " + model.TotalProfit.ToString();
 
                 lblNumCustomers.Text = model.NumCustomers.ToString();
                 lblNumSuppliers.Text = model.NumSuppliers.ToString();
