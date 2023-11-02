@@ -305,20 +305,5 @@
   <ItemGroup>
     <None Include="Resources\car_7260929.png" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\sports-car-art.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\color-lamborghini-fragments-wallpaper-preview.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\HD-wallpaper-lamborghini-abstract-lamborghini-cars-abstract-artist-artwork-digital-art.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\wallpapersden.com_-amc-amx_1920x1080.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\sports-car-art1.jpg" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

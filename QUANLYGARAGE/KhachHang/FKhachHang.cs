@@ -135,11 +135,54 @@ namespace Project
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-            FUpdateKhachHang fUpdateKhachHang = new FUpdateKhachHang();
-            fUpdateKhachHang.khUpdate = dskhachhang[dgvKH.CurrentCell.RowIndex];
-            OpenchildForm(fUpdateKhachHang);
-            dgvKH.DataSource = null;
-            dgvKH.DataSource = dskhachhang;
+            if (dgvKH.SelectedRows.Count > 0)
+            {
+                FUpdateKhachHang fUpdateKhachHang = new FUpdateKhachHang();
+                int selectedRowIndex = dgvKH.SelectedRows[0].Index;
+                string UsernameUpdate = dgvKH.Rows[selectedRowIndex].Cells["Username"].Value.ToString();
+                fUpdateKhachHang.khUpdate = dskhachhang[selectedRowIndex];
+                fUpdateKhachHang.FormClosed += (s, args) => {
+                    if (fUpdateKhachHang.khUpdate != null)
+                    {
+                        string connectionString = DataProvider.Instance.connectionString;
+                        string query = "UPDATE KhachHang SET Username = @Username, MaKH = @MaKH, HoTen = @HoTen, GioiTinh = @GioiTinh, NgaySinh = @NgaySinh,MatKhau=@MatKHau,DiaChi=@DiaChi,Sdt=@Sdt WHERE Username = @UsernameUpdate";
+                        using (SqlConnection connection = new SqlConnection(connectionString))
+                        {
+                            connection.Open();
+                            SqlCommand command = new SqlCommand(query, connection);
+                            command.Parameters.AddWithValue("@Username", fUpdateKhachHang.khUpdate.Username);
+                            command.Parameters.AddWithValue("@MaKH", fUpdateKhachHang.khUpdate.Makh);
+                            command.Parameters.AddWithValue("@HoTen", fUpdateKhachHang.khUpdate.Hoten);
+                            command.Parameters.AddWithValue("@GioiTinh", fUpdateKhachHang.khUpdate.Gioitinh);
+                            command.Parameters.AddWithValue("@NgaySinh", fUpdateKhachHang.khUpdate.Ngaysinh);
+                            command.Parameters.AddWithValue("@MatKhau", fUpdateKhachHang.khUpdate.Matkhau);
+                            command.Parameters.AddWithValue("@DiaChi", fUpdateKhachHang.khUpdate.Diachi);
+                            command.Parameters.AddWithValue("@Sdt", fUpdateKhachHang.khUpdate.Sdt);
+                            command.Parameters.AddWithValue("@UsernameUpdate", UsernameUpdate);
+
+                            int rowsAffected = command.ExecuteNonQuery(); // Execute the update command
+
+                            if (rowsAffected > 0)
+                            {
+                                MessageBox.Show("Cập nhật nhân viên thành công!");
+                            }
+                            else
+                            {
+                                MessageBox.Show("Cập nhật nhân viên không thành công!");
+                            }
+                        }
+
+                        FKhachHang_Load(sender, e);
+                    }
+                };
+
+                OpenchildForm(fUpdateKhachHang);
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn khách hàng cần cập nhật.");
+            }
         }
+
     }
 }

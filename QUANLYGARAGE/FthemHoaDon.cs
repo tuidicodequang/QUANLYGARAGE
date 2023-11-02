@@ -140,10 +140,13 @@ namespace Project
 
         private void buttonDongY_Click(object sender, EventArgs e)
         {
+            taobangHoadon();
+
+        }
+
+        private void taobangHoadon()
+        {
             string connectionString = DataProvider.Instance.connectionString;
-
-
-
             string query = "INSERT INTO HoaDon (MaHD,NgayGD,TongTien) VALUES (@MaHD,@NgayGD,@TongTien)";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -168,7 +171,26 @@ namespace Project
 
             }
         }
+        private void taobangThongtinhoadon()
+        {
+            string connectionString = DataProvider.Instance.connectionString;
+            string query = "INSERT INTO ThongTinHoaDon (MaHD,TenKH,TenSP,SoLuong,Mau,Gia) VALUES (@MaHD,@TenKH,@TenSP,@SoLuong,@Mau,@Gia)";
 
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@MaHD", textMaHD.Text);
+                command.Parameters.AddWithValue("@TenKH",cbTenKH.Text );
+                command.Parameters.AddWithValue("@SoLuong", int.Parse(nmCountSP.Text));
+                command.Parameters.AddWithValue("@Mau", cbColor);
+
+
+                connection.Open();
+                int rowsAffected = command.ExecuteNonQuery();
+                connection.Close();
+
+            }
+        }
         private void xóaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int index = dgvSP.CurrentCell.RowIndex;

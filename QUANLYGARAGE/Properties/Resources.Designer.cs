@@ -103,16 +103,6 @@ namespace QUANLYGARAGE.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap color_lamborghini_fragments_wallpaper_preview {
-            get {
-                object obj = ResourceManager.GetObject("color-lamborghini-fragments-wallpaper-preview", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap dau_tich_mau_xanh {
             get {
                 object obj = ResourceManager.GetObject("dau-tich-mau-xanh", resourceCulture);
@@ -136,17 +126,6 @@ namespace QUANLYGARAGE.Properties {
         internal static System.Drawing.Bitmap gtavi {
             get {
                 object obj = ResourceManager.GetObject("gtavi", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap HD_wallpaper_lamborghini_abstract_lamborghini_cars_abstract_artist_artwork_digital_art {
-            get {
-                object obj = ResourceManager.GetObject("HD-wallpaper-lamborghini-abstract-lamborghini-cars-abstract-artist-artwork-digita" +
-                        "l-art", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -285,26 +264,6 @@ namespace QUANLYGARAGE.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap sports_car_art {
-            get {
-                object obj = ResourceManager.GetObject("sports-car-art", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap sports_car_art1 {
-            get {
-                object obj = ResourceManager.GetObject("sports-car-art1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap statistics_5454515 {
             get {
                 object obj = ResourceManager.GetObject("statistics_5454515", resourceCulture);
@@ -328,16 +287,6 @@ namespace QUANLYGARAGE.Properties {
         internal static System.Drawing.Bitmap user_4034499 {
             get {
                 object obj = ResourceManager.GetObject("user_4034499", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap wallpapersden_com__amc_amx_1920x1080 {
-            get {
-                object obj = ResourceManager.GetObject("wallpapersden.com_-amc-amx_1920x1080", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
