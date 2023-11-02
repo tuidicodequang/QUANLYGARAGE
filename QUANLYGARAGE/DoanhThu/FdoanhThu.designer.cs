@@ -148,7 +148,7 @@ namespace DashboardApp
             this.btnLast30Days.Name = "btnLast30Days";
             this.btnLast30Days.Size = new System.Drawing.Size(104, 34);
             this.btnLast30Days.TabIndex = 4;
-            this.btnLast30Days.Text = "tháng trước";
+            this.btnLast30Days.Text = "30 ngày";
             this.btnLast30Days.UseVisualStyleBackColor = true;
             this.btnLast30Days.Click += new System.EventHandler(this.btnLast30Days_Click);
             // 
