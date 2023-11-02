@@ -6,26 +6,11 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.Windows.Markup;
 
 namespace WindowsFormsApp1
 {
-
-    public abstract class DbConnection
-    {
-        public readonly string connectionString;
-
-        public DbConnection()
-        {
-          
-            connectionString = @"Data Source=DESKTOP-LACK88J\SQLEXPRESS;Initial Catalog=QuanlyOto;Integrated Security=True";
-        }
-
-        protected SqlConnection GetConnection()
-        {
-            return new SqlConnection(connectionString);
-        }
-    }
-    public class DataProvider: DbConnection
+    public class DataProvider
     {
 
         private static DataProvider instance;
@@ -36,6 +21,10 @@ namespace WindowsFormsApp1
             set { instance = value; }
         }
         private DataProvider() { }
+
+
+        public string connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog = QuanLyOTo; Integrated Security = True";
+
         public DataTable ExcuteQuery(string query, object[] parameter = null)//tạo ra 1 bảng dùng query
         {
             DataTable data = new DataTable();
@@ -74,7 +63,44 @@ namespace WindowsFormsApp1
             }
             return data;
         }
-      
+        /*public int ExcuteNonQuery(string query, object[] parameter = null)
+        {
+            int data = 0;
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    SqlCommand command = new SqlCommand(query, connection);
+
+                    if (parameter != null)
+                    {
+                        string[] listPara = query.Split(' ');
+                        int i = 0;
+                        foreach (string item in listPara)
+                        {
+                            if (item.Contains('@'))
+                            {
+                                command.Parameters.AddWithValue(item, parameter[i]);
+                                i++;
+                            }
+                        }
+                    }
+
+                    data = command.ExecuteNonQuery();
+                    connection.Close();
+
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi kết nối");
+            }
+            return data;
+        }*/
+
         public object ExcuteScalar(string query, object[] parameter = null)//tạo ra 1 bảng dùng query
         {
             object data = 0;
