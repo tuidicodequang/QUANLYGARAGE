@@ -6,10 +6,24 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
-using System.Windows.Markup;
 
 namespace WindowsFormsApp1
 {
+    public abstract class DbConnection
+    {
+        private readonly string connectionString;
+
+        public DbConnection()
+        {
+          
+            connectionString = @"Data Source=DESKTOP-LACK88J\SQLEXPRESS;Initial Catalog=QuanlyOto;Integrated Security=True";
+        }
+
+        protected SqlConnection GetConnection()
+        {
+            return new SqlConnection(connectionString);
+        }
+    }
     public class DataProvider
     {
 
@@ -22,8 +36,8 @@ namespace WindowsFormsApp1
         }
         private DataProvider() { }
 
-
-        public string connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog = QuanLyOTo; Integrated Security = True";
+        public string connectionString = @"Data Source=DESKTOP-LACK88J\SQLEXPRESS;Initial Catalog=QuanlyOto;Integrated Security=True";
+       // public string connectionString = @"Data Source=DESKTOP-6ABDHJO\SQLEXPRESS;Initial Catalog=QuanLyOTo;Integrated Security=True";
 
         public DataTable ExcuteQuery(string query, object[] parameter = null)//tạo ra 1 bảng dùng query
         {

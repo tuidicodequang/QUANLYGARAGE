@@ -73,6 +73,26 @@ namespace QUANLYGARAGE.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap car_7260929 {
+            get {
+                object obj = ResourceManager.GetObject("car_7260929", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cardoanhthu {
+            get {
+                object obj = ResourceManager.GetObject("cardoanhthu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap checklist {
             get {
                 object obj = ResourceManager.GetObject("checklist", resourceCulture);
@@ -164,6 +184,16 @@ namespace QUANLYGARAGE.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap people_9968491 {
+            get {
+                object obj = ResourceManager.GetObject("people_9968491", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pexels_photo_3221165 {
             get {
                 object obj = ResourceManager.GetObject("pexels-photo-3221165", resourceCulture);
@@ -184,6 +214,36 @@ namespace QUANLYGARAGE.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pngtree_tick_vector_icon_png_image_963344 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-tick-vector-icon-png-image_963344", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap revenue_7768433 {
+            get {
+                object obj = ResourceManager.GetObject("revenue_7768433", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap revenue_77684331 {
+            get {
+                object obj = ResourceManager.GetObject("revenue_77684331", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap salary {
             get {
                 object obj = ResourceManager.GetObject("salary", resourceCulture);
@@ -194,9 +254,39 @@ namespace QUANLYGARAGE.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap shopping_cart_4034643 {
+            get {
+                object obj = ResourceManager.GetObject("shopping-cart_4034643", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap statistics_5454515 {
+            get {
+                object obj = ResourceManager.GetObject("statistics_5454515", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap user {
             get {
                 object obj = ResourceManager.GetObject("user", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_4034499 {
+            get {
+                object obj = ResourceManager.GetObject("user_4034499", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
