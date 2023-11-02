@@ -1,6 +1,5 @@
 ﻿using QUANLYGARAGE;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,12 +19,12 @@ namespace Project
         public FCarList()
         {
             InitializeComponent();
-
+           
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            FThemXe f = new FThemXe();
+            FThemXe f= new FThemXe();
             OpenchildForm(f);
         }
         private Form currentFormChild;
@@ -55,19 +54,19 @@ namespace Project
 
             string connectionString = DataProvider.Instance.connectionString; // Thay thế bằng chuỗi kết nối của bạn
 
-            string query = "SELECT * FROM SanPham"; // Truy vấn để lấy dữ liệu nhân viên
+                string query = "SELECT * FROM SanPham"; // Truy vấn để lấy dữ liệu nhân viên
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                SqlCommand command = new SqlCommand(query, connection);
-                SqlDataAdapter adapter = new SqlDataAdapter(command);
-                DataTable dataTable = new DataTable();
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    SqlCommand command = new SqlCommand(query, connection);
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    DataTable dataTable = new DataTable();
 
-                adapter.Fill(dataTable);
+                    adapter.Fill(dataTable);
 
                 dgvListCar.DataSource = dataTable; // Gán dữ liệu vào DataGridView
                 dsSanpham = ConvertDataTableToList(dataTable);
-            }
+                }
         }
 
 
@@ -159,50 +158,11 @@ namespace Project
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-            if (dgvListCar.SelectedRows.Count > 0)
-            {
-                FUpdateSanPham fUpdateSanPham = new FUpdateSanPham();
-                int selectedRowIndex = dgvListCar.SelectedRows[0].Index;
-                string MaSPUpdate = dgvListCar.Rows[selectedRowIndex].Cells["MaSP"].Value.ToString();
-                fUpdateSanPham.spUpdate = dsSanpham[selectedRowIndex];
-                fUpdateSanPham.FormClosed += (s, args) => {
-                    if (fUpdateSanPham.spUpdate != null)
-                    {
-                        string connectionString = DataProvider.Instance.connectionString;
-                        string query = "UPDATE SanPham SET MaSP = @MaSP, TenSP = @TenSP, Hang = @Hang, Mau = @Mau, Gia = @Gia WHERE MaSP = @MaSPUpdate";
-                        using (SqlConnection connection = new SqlConnection(connectionString))
-                        {
-                            connection.Open();
-                            SqlCommand command = new SqlCommand(query, connection);
-                            command.Parameters.AddWithValue("@MaSP", fUpdateSanPham.spUpdate.MaSP);
-                            command.Parameters.AddWithValue("@TenSP", fUpdateSanPham.spUpdate.Tensp);
-                            command.Parameters.AddWithValue("@Hang", fUpdateSanPham.spUpdate.Hang);
-                            command.Parameters.AddWithValue("@Mau", fUpdateSanPham.spUpdate.Mau);
-                            command.Parameters.AddWithValue("@Gia", fUpdateSanPham.spUpdate.Gia);
-                            command.Parameters.AddWithValue("@MaSPUpdate", MaSPUpdate);
-
-                            int rowsAffected = command.ExecuteNonQuery(); // Execute the update command
-
-                            if (rowsAffected > 0)
-                            {
-                                MessageBox.Show("Cập nhật sản phẩm thành công!");
-                            }
-                            else
-                            {
-                                MessageBox.Show("Cập nhật sản phẩm không thành công!");
-                            }
-                        }
-
-                        FCarList_Load(sender, e);
-                    }
-                };
-
-                OpenchildForm(fUpdateSanPham);
-            }
-            else
-            {
-                MessageBox.Show("Vui lòng chọn sản phẩm cần cập nhật.");
-            }
+            FUpdateSanPham fUpdateNhanVien = new FUpdateSanPham();
+            fUpdateNhanVien.spUpdate = dsSanpham[dgvListCar.CurrentCell.RowIndex];
+            OpenchildForm(fUpdateNhanVien);
+            dgvListCar.DataSource = null;
+            dgvListCar.DataSource = dsSanpham;
         }
     }
 }

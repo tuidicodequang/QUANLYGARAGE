@@ -133,11 +133,14 @@
   <data name="lamborghini_loginpicture" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lamborghini_loginpicture.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="user_4034499" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user_4034499.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sports-car-art" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sports-car-art.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cabriolet" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cabriolet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wallpapersden.com_-amc-amx_1920x1080" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wallpapersden.com_-amc-amx_1920x1080.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,8 +160,11 @@
   <data name="nhân viên1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nhân viên1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="salary" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\salary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="user_4034499" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user_4034499.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="car_7260929" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\car_7260929.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="revenue_77684331" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\revenue_77684331.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -171,6 +177,12 @@
   </data>
   <data name="statistics_5454515" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\statistics_5454515.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HD-wallpaper-lamborghini-abstract-lamborghini-cars-abstract-artist-artwork-digital-art" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HD-wallpaper-lamborghini-abstract-lamborghini-cars-abstract-artist-artwork-digital-art.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="color-lamborghini-fragments-wallpaper-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\color-lamborghini-fragments-wallpaper-preview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="kisspng-client-icon-businessman-icon-vector-design-5a6f77c8923c97.818921111517254600599" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kisspng-client-icon-businessman-icon-vector-design-5a6f77c8923c97.818921111517254600599.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,7 +211,10 @@
   <data name="wallpapersden.com_need-for-speed-neon-ai-art_1920x1080" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wallpapersden.com_need-for-speed-neon-ai-art_1920x1080.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="car_7260929" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\car_7260929.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="salary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sports-car-art1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sports-car-art1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

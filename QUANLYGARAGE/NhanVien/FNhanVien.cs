@@ -157,56 +157,13 @@ namespace QUANLYGARAGE
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if (dgvNV.SelectedRows.Count > 0)
-            {
-                FUpdateNhanVien fUpdateNhanVien = new FUpdateNhanVien();
-                int selectedRowIndex = dgvNV.SelectedRows[0].Index;
-                string UsernameUpdate = dgvNV.Rows[selectedRowIndex].Cells["Username"].Value.ToString();
-                fUpdateNhanVien.nvUpdate = dsNhanVien[selectedRowIndex];
-                fUpdateNhanVien.FormClosed += (s, args) => {
-                   if (fUpdateNhanVien.nvUpdate != null)
-                   {
-                        string connectionString = DataProvider.Instance.connectionString;
-                        string query = "UPDATE NhanVien SET Username = @Username, MaNV = @MaNV, HoTen = @HoTen, GioiTinh = @GioiTinh, NgaySinh = @NgaySinh,MatKhau=@MatKHau,DiaChi=@DiaChi,Sdt=@Sdt WHERE Username = @UsernameUpdate";
-                        using (SqlConnection connection = new SqlConnection(connectionString))
-                        {
-                            connection.Open();
-                            SqlCommand command = new SqlCommand(query, connection);
-                            command.Parameters.AddWithValue("@Username", fUpdateNhanVien.nvUpdate.Username);
-                            command.Parameters.AddWithValue("@MaNV", fUpdateNhanVien.nvUpdate.Manv);
-                            command.Parameters.AddWithValue("@HoTen", fUpdateNhanVien.nvUpdate.Hoten);
-                            command.Parameters.AddWithValue("@GioiTinh", fUpdateNhanVien.nvUpdate.Gioitinh);
-                            command.Parameters.AddWithValue("@NgaySinh", fUpdateNhanVien.nvUpdate.Ngaysinh);
-                            command.Parameters.AddWithValue("@MatKhau", fUpdateNhanVien.nvUpdate.Matkhau);
-                            command.Parameters.AddWithValue("@DiaChi", fUpdateNhanVien.nvUpdate.Diachi);
-                            command.Parameters.AddWithValue("@Sdt", fUpdateNhanVien.nvUpdate.Sdt);
-                            command.Parameters.AddWithValue("@UsernameUpdate", UsernameUpdate);
-
-                            int rowsAffected = command.ExecuteNonQuery(); // Execute the update command
-
-                            if (rowsAffected > 0)
-                            {
-                                MessageBox.Show("Cập nhật nhân viên thành công!");
-                            }
-                            else
-                            {
-                                MessageBox.Show("Cập nhật nhân viên không thành công!");
-                            }
-                        }
-
-                        FNhanVien_Load(sender, e);
-                    }
-                };
-
-                OpenchildForm(fUpdateNhanVien);
-            }
-            else
-            {
-                MessageBox.Show("Vui lòng chọn sản phẩm cần cập nhật.");
-            }
+            FUpdateNhanVien fUpdateNhanVien = new FUpdateNhanVien();
+            fUpdateNhanVien.nvUpdate = dsNhanVien[dgvNV.CurrentCell.RowIndex];
+            OpenchildForm(fUpdateNhanVien);
+            dgvNV.DataSource = null;
+            dgvNV.DataSource = dsNhanVien;
+            
         }
-
-   
     }
 }
 
