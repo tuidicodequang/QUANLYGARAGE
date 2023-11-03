@@ -17,7 +17,7 @@ namespace WindowsFormsApp1
         public DbConnection()
         {
           
-            connectionString = @"Data Source=DESKTOP-LACK88J\SQLEXPRESS;Initial Catalog=QuanlyOto;Integrated Security=True";
+            connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog = QuanLyOTo; Integrated Security = True";
         }
 
         protected SqlConnection GetConnection()
