@@ -167,6 +167,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FthemHoaDon.resx">
       <DependentUpon>FthemHoaDon.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="KhachHang\FThemKhachHang.resx">
       <DependentUpon>FThemKhachHang.cs</DependentUpon>
@@ -176,6 +177,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sản Phẩm\FSanPham.resx">
       <DependentUpon>FSanPham.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="NhanVien\FthemNhanVien.resx">
       <DependentUpon>FthemNhanVien.cs</DependentUpon>
