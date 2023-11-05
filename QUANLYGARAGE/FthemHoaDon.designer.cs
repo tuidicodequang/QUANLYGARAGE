@@ -62,6 +62,8 @@
             this.xóaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.print = new System.Drawing.Printing.PrintDocument();
             this.printPreview = new System.Windows.Forms.PrintPreviewDialog();
+            this.textMaSP = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmCountSP)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -340,6 +342,7 @@
             this.cbColor.Name = "cbColor";
             this.cbColor.Size = new System.Drawing.Size(92, 28);
             this.cbColor.TabIndex = 44;
+            this.cbColor.SelectedIndexChanged += new System.EventHandler(this.cbColor_SelectedIndexChanged);
             // 
             // textTongTien
             // 
@@ -396,11 +399,31 @@
             this.printPreview.Name = "printPreview";
             this.printPreview.Visible = false;
             // 
+            // textMaSP
+            // 
+            this.textMaSP.Location = new System.Drawing.Point(448, 252);
+            this.textMaSP.Name = "textMaSP";
+            this.textMaSP.Size = new System.Drawing.Size(100, 25);
+            this.textMaSP.TabIndex = 48;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label8.Location = new System.Drawing.Point(385, 253);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(53, 19);
+            this.label8.TabIndex = 49;
+            this.label8.Text = "MaSP";
+            // 
             // FthemHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(854, 752);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.textMaSP);
             this.Controls.Add(this.NewOrder);
             this.Controls.Add(this.cbTenSP);
             this.Controls.Add(this.textTongTien);
@@ -469,5 +492,7 @@
         private System.Windows.Forms.ToolStripMenuItem xóaToolStripMenuItem;
         private System.Drawing.Printing.PrintDocument print;
         private System.Windows.Forms.PrintPreviewDialog printPreview;
+        private System.Windows.Forms.TextBox textMaSP;
+        private System.Windows.Forms.Label label8;
     }
 }

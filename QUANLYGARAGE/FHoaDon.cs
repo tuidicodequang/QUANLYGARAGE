@@ -58,5 +58,9 @@ namespace QUANLYGARAGE
             FthemHoaDon f = new FthemHoaDon();
             OpenchildForm(f);
         }
+
+
+
+
     }
 }

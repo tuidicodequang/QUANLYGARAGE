@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.password = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -42,12 +43,15 @@
             this.CustomerId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.dgvHD = new System.Windows.Forms.DataGridView();
             this.LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.xemChiTiếtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvHD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHD)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // password
@@ -61,9 +65,9 @@
             // btnUpdate
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnUpdate.Location = new System.Drawing.Point(1191, 191);
+            this.btnUpdate.Location = new System.Drawing.Point(1042, 203);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(135, 30);
+            this.btnUpdate.Size = new System.Drawing.Size(118, 32);
             this.btnUpdate.TabIndex = 2;
             this.btnUpdate.Text = "Cập nhật";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -71,9 +75,9 @@
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnDelete.Location = new System.Drawing.Point(1019, 191);
+            this.btnDelete.Location = new System.Drawing.Point(892, 203);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(135, 30);
+            this.btnDelete.Size = new System.Drawing.Size(118, 32);
             this.btnDelete.TabIndex = 4;
             this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -81,17 +85,17 @@
             // textTimNV
             // 
             this.textTimNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textTimNV.Location = new System.Drawing.Point(113, 104);
+            this.textTimNV.Location = new System.Drawing.Point(99, 110);
             this.textTimNV.Name = "textTimNV";
-            this.textTimNV.Size = new System.Drawing.Size(340, 27);
+            this.textTimNV.Size = new System.Drawing.Size(298, 27);
             this.textTimNV.TabIndex = 5;
             // 
             // btnInsert
             // 
             this.btnInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnInsert.Location = new System.Drawing.Point(830, 191);
+            this.btnInsert.Location = new System.Drawing.Point(726, 203);
             this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(135, 30);
+            this.btnInsert.Size = new System.Drawing.Size(118, 32);
             this.btnInsert.TabIndex = 3;
             this.btnInsert.Text = "Thêm";
             this.btnInsert.UseVisualStyleBackColor = true;
@@ -110,7 +114,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(606, 9);
+            this.label1.Location = new System.Drawing.Point(530, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(154, 38);
             this.label1.TabIndex = 7;
@@ -147,9 +151,9 @@
             // btnSearch
             // 
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnSearch.Location = new System.Drawing.Point(469, 101);
+            this.btnSearch.Location = new System.Drawing.Point(410, 107);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(135, 30);
+            this.btnSearch.Size = new System.Drawing.Size(118, 32);
             this.btnSearch.TabIndex = 1;
             this.btnSearch.Text = "Tìm kiếm";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -184,8 +188,23 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1321, 760);
+            this.panel1.Size = new System.Drawing.Size(1156, 808);
             this.panel1.TabIndex = 8;
+            // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Searchengin;
+            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 27;
+            this.iconPictureBox1.Location = new System.Drawing.Point(64, 110);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(30, 27);
+            this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconPictureBox1.TabIndex = 6;
+            this.iconPictureBox1.TabStop = false;
             // 
             // dgvHD
             // 
@@ -205,14 +224,14 @@
             this.Column1,
             this.password});
             this.dgvHD.GridColor = System.Drawing.SystemColors.ButtonFace;
-            this.dgvHD.Location = new System.Drawing.Point(0, 228);
+            this.dgvHD.Location = new System.Drawing.Point(0, 242);
             this.dgvHD.Margin = new System.Windows.Forms.Padding(4);
             this.dgvHD.MultiSelect = false;
             this.dgvHD.Name = "dgvHD";
             this.dgvHD.ReadOnly = true;
             this.dgvHD.RowHeadersWidth = 51;
             this.dgvHD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvHD.Size = new System.Drawing.Size(1339, 579);
+            this.dgvHD.Size = new System.Drawing.Size(1172, 615);
             this.dgvHD.TabIndex = 19;
             // 
             // LastName
@@ -224,26 +243,25 @@
             this.LastName.ReadOnly = true;
             this.LastName.Visible = false;
             // 
-            // iconPictureBox1
+            // contextMenuStrip1
             // 
-            this.iconPictureBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Searchengin;
-            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 25;
-            this.iconPictureBox1.Location = new System.Drawing.Point(73, 104);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(34, 25);
-            this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconPictureBox1.TabIndex = 6;
-            this.iconPictureBox1.TabStop = false;
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.xemChiTiếtToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 56);
+            // 
+            // xemChiTiếtToolStripMenuItem
+            // 
+            this.xemChiTiếtToolStripMenuItem.Name = "xemChiTiếtToolStripMenuItem";
+            this.xemChiTiếtToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.xemChiTiếtToolStripMenuItem.Text = "Xem chi tiết";
             // 
             // FHoaDon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1321, 760);
+            this.ClientSize = new System.Drawing.Size(1156, 808);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FHoaDon";
@@ -251,8 +269,9 @@
             this.Load += new System.EventHandler(this.FHoaDon_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvHD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHD)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -276,5 +295,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dgvHD;
         private System.Windows.Forms.DataGridViewTextBoxColumn LastName;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem xemChiTiếtToolStripMenuItem;
     }
 }
