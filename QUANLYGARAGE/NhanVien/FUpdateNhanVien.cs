@@ -24,7 +24,9 @@ namespace QUANLYGARAGE
             {
                 textMANV.Text = nvUpdate.Manv.ToString();
                 textHoTen.Text = nvUpdate.Hoten.ToString();
+                txtNgaySinh.Text = nvUpdate.Ngaysinh.ToString();
                 textPassword.Text = nvUpdate.Matkhau.ToString();
+                (TickNam.Checked, TichNu.Checked) = (nvUpdate.Gioitinh == "Nam") ? (true, false) : (false, true);
                 txtNgaySinh.Value = nvUpdate.Ngaysinh;
                 textUser.Text = nvUpdate.Username.ToString();
                 textSDT.Text = nvUpdate.Sdt.ToString();
@@ -41,6 +43,7 @@ namespace QUANLYGARAGE
                 nvUpdate.Manv = textMANV.Text;
                 nvUpdate.Hoten = textHoTen.Text;
                 nvUpdate.Username = textUser.Text;
+                nvUpdate.Gioitinh= TickNam.Checked ? TickNam.Text : TichNu.Text;
                 nvUpdate.Ngaysinh = txtNgaySinh.Value;
                 nvUpdate.Matkhau = textPassword.Text;
                 nvUpdate.Diachi = txtDiaChiNV.Text;
@@ -48,6 +51,11 @@ namespace QUANLYGARAGE
                 this.Close();
             }
             
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

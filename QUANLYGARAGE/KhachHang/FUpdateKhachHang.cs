@@ -27,6 +27,7 @@ namespace QUANLYGARAGE
                 textHoTen.Text = khUpdate.Hoten.ToString();
                 textPassword.Text = khUpdate.Matkhau.ToString();
                 txtNgaySinh.Value = khUpdate.Ngaysinh;
+                (TickNam.Checked, TichNu.Checked) = (khUpdate.Gioitinh == "Nam") ? (true, false) : (false, true);
                 textUser.Text = khUpdate.Username.ToString();
                 textSDT.Text = khUpdate.Sdt.ToString();
                 txtDiaChiNV.Text = khUpdate.Diachi.ToString();
@@ -42,6 +43,8 @@ namespace QUANLYGARAGE
                 khUpdate.Makh = textMAKH.Text;
                 khUpdate.Hoten = textHoTen.Text;
                 khUpdate.Username = textUser.Text;
+                khUpdate.Ngaysinh= txtNgaySinh.Value;
+                khUpdate.Gioitinh= TickNam.Checked ? TickNam.Text : TichNu.Text;
                 khUpdate.Ngaysinh = txtNgaySinh.Value;
                 khUpdate.Matkhau = textPassword.Text;
                 khUpdate.Diachi = txtDiaChiNV.Text;
@@ -49,6 +52,11 @@ namespace QUANLYGARAGE
                 this.Close();
             }
 
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

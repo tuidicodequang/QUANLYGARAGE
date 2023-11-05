@@ -28,7 +28,7 @@ namespace QUANLYGARAGE
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
-            string connectionString = DataProvider.Instance.connectionString; // Thay thế bằng chuỗi kết nối của bạn
+            string connectionString = DataProvider.Instance.connectionString; 
 
             string maKH = textMaKH.Text;
             string hoTen = textHoTen.Text;
